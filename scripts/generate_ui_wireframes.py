@@ -69,6 +69,32 @@ def write_wireframe(name, svg_content, title):
 def mobile_frame(title, inner_svg):
     w, h = 420, 780
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
+<defs>
+  <!-- Background Gradient: Deep Royal Navy to Oceanic Sapphire -->
+  <linearGradient id="brandBg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#0f172a"/>
+    <stop offset="50%" stop-color="#1e3a8a"/>
+    <stop offset="100%" stop-color="#0369a1"/>
+  </linearGradient>
+
+  <!-- Calming Lotus & Pulse Cyan Gradient -->
+  <linearGradient id="cyanGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#0284c7"/>
+    <stop offset="50%" stop-color="#38bdf8"/>
+    <stop offset="100%" stop-color="#7dd3fc"/>
+  </linearGradient>
+
+  <!-- Healing Emerald Mint Gradient -->
+  <linearGradient id="mintGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#34d399"/>
+    <stop offset="100%" stop-color="#059669"/>
+  </linearGradient>
+
+  <filter id="logoShadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.3"/>
+  </filter>
+</defs>
+
 <rect width="{w}" height="{h}" fill="#ffffff"/>
 <!-- Mobile Phone Chassis -->
 <rect x="25" y="20" width="370" height="710" rx="36" fill="#f8fafc" stroke="#0f172a" stroke-width="3"/>
@@ -96,41 +122,56 @@ def build_all_wireframes():
     # WF01: Landing & Onboarding Screen
     # =========================================================================
     inner_01 = '''
-<!-- MindEase Vector Logo: Stylized Neural Brain & Wellness Nodes -->
-<g transform="translate(175, 88)">
-  <circle cx="35" cy="35" r="34" fill="#eff6ff" stroke="#1e3a8a" stroke-width="2.5"/>
-  <!-- Stylized Brain Contour -->
-  <path d="M 22 23 C 15 23 13 30 17 36 C 13 40 15 48 21 48 C 23 52 32 52 35 47 C 38 52 47 52 49 48 C 55 48 57 40 53 36 C 57 30 55 23 48 23 C 44 18 26 18 22 23 Z" fill="#1e3a8a"/>
-  <!-- Neural Inner Pathways -->
-  <path d="M 35 24 L 35 44 M 27 30 L 35 34 M 43 30 L 35 34 M 26 41 L 35 43 M 44 41 L 35 43" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-  <circle cx="27" cy="30" r="2.2" fill="#38bdf8"/>
-  <circle cx="43" cy="30" r="2.2" fill="#38bdf8"/>
-  <circle cx="35" cy="34" r="2.5" fill="#ffffff"/>
+<!-- Premium MindEase Brand Emblem Badge -->
+<g transform="translate(170, 72)">
+  <rect x="0" y="0" width="80" height="80" rx="20" fill="url(#brandBg)" filter="url(#logoShadow)"/>
+  <rect x="1" y="1" width="78" height="78" rx="19" fill="none" stroke="#38bdf8" stroke-width="1.2" opacity="0.6"/>
+  <circle cx="40" cy="40" r="34" fill="none" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="3,4" opacity="0.3"/>
+
+  <!-- Scaled Vector Symbol: Brain & Lotus & Pulse -->
+  <g transform="translate(40, 40) scale(0.18) translate(-256, -256)">
+    <!-- Left Lobe -->
+    <path d="M 256 128 C 205 128 160 162 160 215 C 160 238 172 258 186 272 C 168 286 156 308 156 334 C 156 376 190 408 232 408 C 245 408 252 402 256 396" fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round"/>
+    <!-- Right Lobe -->
+    <path d="M 256 128 C 307 128 352 162 352 215 C 352 238 340 258 326 272 C 344 286 356 308 356 334 C 356 376 322 408 280 408 C 267 408 260 402 256 396" fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round"/>
+    <!-- Lotus Petals -->
+    <path d="M 256 370 C 235 345 205 305 205 255 C 205 205 235 165 256 145" fill="none" stroke="url(#cyanGrad)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M 256 370 C 277 345 307 305 307 255 C 307 205 277 165 256 145" fill="none" stroke="url(#cyanGrad)" stroke-width="12" stroke-linecap="round"/>
+    <!-- Heartbeat Pulse Line -->
+    <path d="M 205 285 L 235 285 L 244 260 L 256 315 L 268 270 L 276 285 L 307 285" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Synapse Nodes -->
+    <circle cx="205" cy="195" r="11" fill="#38bdf8"/>
+    <circle cx="307" cy="195" r="11" fill="#38bdf8"/>
+    <circle cx="210" cy="355" r="11" fill="url(#mintGrad)"/>
+    <circle cx="302" cy="355" r="11" fill="url(#mintGrad)"/>
+    <circle cx="256" cy="128" r="13" fill="#ffffff"/>
+  </g>
 </g>
 
-<text x="210" y="192" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#0f172a" text-anchor="middle">MindEase</text>
-<text x="210" y="212" font-family="Arial, sans-serif" font-size="11.5" fill="#475569" text-anchor="middle">AI Stress Detection &amp; Academic Support</text>
-<text x="210" y="228" font-family="Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#0284c7" text-anchor="middle">COMSATS University Islamabad (CUI)</text>
+<text x="210" y="176" font-family="'Segoe UI', -apple-system, Arial, sans-serif" font-size="24" font-weight="900" fill="#0f172a" text-anchor="middle" letter-spacing="-0.5">Mind<tspan fill="#0284c7">Ease</tspan></text>
+<text x="210" y="196" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#475569" text-anchor="middle">AI Stress Detection &amp; Academic Support</text>
+<rect x="110" y="205" width="200" height="20" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+<text x="210" y="219" font-family="Arial, sans-serif" font-size="8.5" font-weight="bold" fill="#1e40af" text-anchor="middle">COMSATS UNIVERSITY ISLAMABAD (CUI)</text>
 
 <!-- Language Selection Card -->
-<rect x="55" y="250" width="310" height="165" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
-<text x="75" y="276" font-family="Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#0f172a">Choose App Language / Zaban Ka Intekhab</text>
-<text x="75" y="292" font-family="Arial, sans-serif" font-size="9.5" fill="#64748b">Select your preferred interaction language:</text>
+<rect x="55" y="240" width="310" height="175" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="75" y="266" font-family="Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#0f172a">Choose App Language / Zaban Ka Intekhab</text>
+<text x="75" y="282" font-family="Arial, sans-serif" font-size="9.5" fill="#64748b">Select your preferred interaction language:</text>
 
 <!-- Language Pills -->
-<rect x="75" y="306" width="80" height="34" rx="6" fill="#1e3a8a"/>
-<text x="115" y="327" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#ffffff" text-anchor="middle">English</text>
+<rect x="75" y="296" width="80" height="34" rx="6" fill="#1e3a8a"/>
+<text x="115" y="317" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#ffffff" text-anchor="middle">English</text>
 
-<rect x="165" y="306" width="90" height="34" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
-<text x="210" y="327" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a" text-anchor="middle">Urdu (Nastaliq)</text>
+<rect x="165" y="296" width="90" height="34" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="210" y="317" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a" text-anchor="middle">Urdu (Nastaliq)</text>
 
-<rect x="265" y="306" width="85" height="34" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
-<text x="307" y="327" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a" text-anchor="middle">Roman Urdu</text>
+<rect x="265" y="296" width="85" height="34" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="307" y="317" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a" text-anchor="middle">Roman Urdu</text>
 
 <!-- Core Features Bullets -->
-<text x="75" y="362" font-family="Arial, sans-serif" font-size="9.5" fill="#334155">✓ Standardized PSS-10 Multilingual Assessment</text>
-<text x="75" y="380" font-family="Arial, sans-serif" font-size="9.5" fill="#334155">✓ Daily Voice Diary via Whisper Speech-to-Text</text>
-<text x="75" y="398" font-family="Arial, sans-serif" font-size="9.5" fill="#334155">✓ Explainable AI (SHAP) Insights &amp; Study Plans</text>
+<text x="75" y="354" font-family="Arial, sans-serif" font-size="9.5" fill="#334155">✓ Standardized PSS-10 Multilingual Assessment</text>
+<text x="75" y="374" font-family="Arial, sans-serif" font-size="9.5" fill="#334155">✓ Daily Voice Diary via Whisper Speech-to-Text</text>
+<text x="75" y="394" font-family="Arial, sans-serif" font-size="9.5" fill="#334155">✓ Explainable AI (SHAP) Insights &amp; Study Plans</text>
 
 <!-- Action Buttons -->
 <rect x="55" y="475" width="310" height="48" rx="8" fill="#1e3a8a"/>
@@ -147,47 +188,56 @@ def build_all_wireframes():
     # WF02: Sign Up Screen
     # =========================================================================
     inner_02 = '''
-<text x="55" y="95" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#0f172a">Create New Account</text>
-<text x="55" y="115" font-family="Arial, sans-serif" font-size="11" fill="#475569">Join MindEase for confidential student wellness</text>
+<!-- Top Mini-Brand Header -->
+<g transform="translate(55, 68)">
+  <rect x="0" y="0" width="30" height="30" rx="8" fill="url(#brandBg)"/>
+  <circle cx="15" cy="15" r="7" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+  <circle cx="15" cy="15" r="3" fill="#ffffff"/>
+  <text x="38" y="20" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="900" fill="#0f172a">Mind<tspan fill="#0284c7">Ease</tspan></text>
+  <text x="115" y="20" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#64748b">• Registration</text>
+</g>
+
+<text x="55" y="118" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#0f172a">Create New Account</text>
+<text x="55" y="136" font-family="Arial, sans-serif" font-size="11" fill="#475569">Join MindEase for confidential student wellness</text>
 
 <!-- Role Toggle Segmented Control -->
-<rect x="55" y="135" width="310" height="38" rx="8" fill="#f1f5f9"/>
-<rect x="58" y="138" width="150" height="32" rx="6" fill="#1e3a8a"/>
-<text x="133" y="158" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">Student Profile</text>
-<text x="285" y="158" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#475569" text-anchor="middle">Counselor Profile</text>
+<rect x="55" y="152" width="310" height="38" rx="8" fill="#f1f5f9"/>
+<rect x="58" y="155" width="150" height="32" rx="6" fill="#1e3a8a"/>
+<text x="133" y="175" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">Student Profile</text>
+<text x="285" y="175" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#475569" text-anchor="middle">Counselor Profile</text>
 
 <!-- Form fields -->
-<text x="55" y="198" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a">Full Name</text>
-<rect x="55" y="208" width="310" height="38" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
-<text x="70" y="232" font-family="Arial, sans-serif" font-size="10.5" fill="#334155">Muhammad Rehan Khalid</text>
+<text x="55" y="210" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a">Full Name</text>
+<rect x="55" y="220" width="310" height="38" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="70" y="244" font-family="Arial, sans-serif" font-size="10.5" fill="#334155">Muhammad Rehan Khalid</text>
 
-<text x="55" y="266" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a">University Email (.edu.pk)</text>
-<rect x="55" y="276" width="310" height="38" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
-<text x="70" y="300" font-family="Arial, sans-serif" font-size="10.5" fill="#334155">fa23-bcs-140@cuiwah.edu.pk</text>
+<text x="55" y="278" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a">University Email (.edu.pk)</text>
+<rect x="55" y="288" width="310" height="38" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="70" y="312" font-family="Arial, sans-serif" font-size="10.5" fill="#334155">fa23-bcs-140@cuiwah.edu.pk</text>
 
-<text x="55" y="334" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a">Registration Number</text>
-<rect x="55" y="344" width="310" height="38" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
-<text x="70" y="368" font-family="Arial, sans-serif" font-size="10.5" fill="#334155">CIIT/FA23-BCS-140/WAH</text>
+<text x="55" y="346" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a">Registration Number</text>
+<rect x="55" y="356" width="310" height="38" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="70" y="380" font-family="Arial, sans-serif" font-size="10.5" fill="#334155">CIIT/FA23-BCS-140/WAH</text>
 
-<text x="55" y="402" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a">Password</text>
-<rect x="55" y="412" width="310" height="38" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
-<text x="70" y="436" font-family="Arial, sans-serif" font-size="10.5" fill="#334155">••••••••••••••••</text>
+<text x="55" y="414" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a">Password</text>
+<rect x="55" y="424" width="310" height="38" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="70" y="448" font-family="Arial, sans-serif" font-size="10.5" fill="#334155">••••••••••••••••</text>
 
 <!-- Password Security Badge -->
-<rect x="55" y="458" width="310" height="24" rx="4" fill="#ecfdf5" stroke="#10b981"/>
-<text x="70" y="474" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#047857">✓ Strong Password • Stored with bcrypt hash</text>
+<rect x="55" y="470" width="310" height="24" rx="4" fill="#ecfdf5" stroke="#10b981"/>
+<text x="70" y="486" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#047857">✓ Strong Password • Stored with bcrypt hash</text>
 
 <!-- Terms Checkbox -->
-<rect x="55" y="496" width="14" height="14" rx="3" fill="#1e3a8a"/>
-<text x="62" y="507" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">✓</text>
-<text x="78" y="507" font-family="Arial, sans-serif" font-size="9.5" fill="#475569">I agree to the Student Ethics &amp; Confidentiality Policy</text>
+<rect x="55" y="506" width="14" height="14" rx="3" fill="#1e3a8a"/>
+<text x="62" y="517" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">✓</text>
+<text x="78" y="517" font-family="Arial, sans-serif" font-size="9.5" fill="#475569">I agree to the Student Ethics &amp; Confidentiality Policy</text>
 
-<rect x="55" y="530" width="310" height="46" rx="8" fill="#1e3a8a"/>
-<text x="210" y="558" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">Register Account →</text>
+<rect x="55" y="538" width="310" height="46" rx="8" fill="#1e3a8a"/>
+<text x="210" y="566" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">Register Account →</text>
 
 <!-- Non-overlapping Sign In Link -->
-<text x="180" y="605" font-family="Arial, sans-serif" font-size="10.5" fill="#64748b" text-anchor="end">Already have an account?</text>
-<text x="188" y="605" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#1e3a8a" text-anchor="start">Sign In Here</text>
+<text x="180" y="612" font-family="Arial, sans-serif" font-size="10.5" fill="#64748b" text-anchor="end">Already have an account?</text>
+<text x="188" y="612" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#1e3a8a" text-anchor="start">Sign In Here</text>
 '''
     write_wireframe("WF02_Sign_Up_Screen", mobile_frame("Figure 3.3.2: User Registration Screen (Sign Up)", inner_02), "WF02 Sign Up Screen")
 
@@ -195,40 +245,53 @@ def build_all_wireframes():
     # WF03: User Login Screen
     # =========================================================================
     inner_03 = '''
-<!-- Security Shield & Key Vector Logo -->
-<g transform="translate(175, 85)">
-  <circle cx="35" cy="35" r="34" fill="#eff6ff" stroke="#1e3a8a" stroke-width="2.5"/>
-  <!-- Shield Shape -->
-  <path d="M 35 15 L 52 21 L 52 35 C 52 45 44 52 35 55 C 26 52 18 45 18 35 L 18 21 Z" fill="#1e3a8a"/>
-  <!-- Keyhole Lock Inside -->
-  <rect x="28" y="31" width="14" height="12" rx="2" fill="#ffffff"/>
-  <path d="M 30 31 L 30 26 C 30 23 32 21 35 21 C 38 21 40 23 40 26 L 40 31" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-  <circle cx="35" cy="37" r="1.8" fill="#1e3a8a"/>
+<!-- Premium MindEase Brand Emblem Badge -->
+<g transform="translate(170, 72)">
+  <rect x="0" y="0" width="80" height="80" rx="20" fill="url(#brandBg)" filter="url(#logoShadow)"/>
+  <rect x="1" y="1" width="78" height="78" rx="19" fill="none" stroke="#38bdf8" stroke-width="1.2" opacity="0.6"/>
+  <circle cx="40" cy="40" r="34" fill="none" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="3,4" opacity="0.3"/>
+
+  <!-- Scaled Vector Symbol: Brain & Lotus & Pulse -->
+  <g transform="translate(40, 40) scale(0.18) translate(-256, -256)">
+    <!-- Left Lobe -->
+    <path d="M 256 128 C 205 128 160 162 160 215 C 160 238 172 258 186 272 C 168 286 156 308 156 334 C 156 376 190 408 232 408 C 245 408 252 402 256 396" fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round"/>
+    <!-- Right Lobe -->
+    <path d="M 256 128 C 307 128 352 162 352 215 C 352 238 340 258 326 272 C 344 286 356 308 356 334 C 356 376 322 408 280 408 C 267 408 260 402 256 396" fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round"/>
+    <!-- Lotus Petals -->
+    <path d="M 256 370 C 235 345 205 305 205 255 C 205 205 235 165 256 145" fill="none" stroke="url(#cyanGrad)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M 256 370 C 277 345 307 305 307 255 C 307 205 277 165 256 145" fill="none" stroke="url(#cyanGrad)" stroke-width="12" stroke-linecap="round"/>
+    <!-- Heartbeat Pulse Line -->
+    <path d="M 205 285 L 235 285 L 244 260 L 256 315 L 268 270 L 276 285 L 307 285" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Synapse Nodes -->
+    <circle cx="205" cy="195" r="11" fill="#38bdf8"/>
+    <circle cx="307" cy="195" r="11" fill="#38bdf8"/>
+    <circle cx="210" cy="355" r="11" fill="url(#mintGrad)"/>
+    <circle cx="302" cy="355" r="11" fill="url(#mintGrad)"/>
+    <circle cx="256" cy="128" r="13" fill="#ffffff"/>
+  </g>
 </g>
 
-<text x="210" y="185" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">Welcome Back</text>
-<text x="210" y="205" font-family="Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">Sign in to track your stress &amp; adaptive study plan</text>
+<text x="210" y="176" font-family="'Segoe UI', -apple-system, Arial, sans-serif" font-size="22" font-weight="900" fill="#0f172a" text-anchor="middle" letter-spacing="-0.5">Welcome Back</text>
+<text x="210" y="196" font-family="Arial, sans-serif" font-size="10.5" fill="#475569" text-anchor="middle">Sign in to track your stress &amp; adaptive study plan</text>
+<rect x="110" y="205" width="200" height="20" rx="10" fill="#eff6ff" stroke="#bfdbfe"/>
+<text x="210" y="219" font-family="Arial, sans-serif" font-size="8.5" font-weight="bold" fill="#1e40af" text-anchor="middle">MULTI-ROLE JWT AUTHENTICATION GUARD</text>
 
-<!-- Role Indicator Pill -->
-<rect x="110" y="222" width="200" height="24" rx="12" fill="#eff6ff" stroke="#bfdbfe"/>
-<text x="210" y="238" font-family="Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#1e40af" text-anchor="middle">Multi-Role JWT Authentication Guard</text>
+<text x="55" y="255" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a">Institutional Email Address</text>
+<rect x="55" y="265" width="310" height="42" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="70" y="291" font-family="Arial, sans-serif" font-size="11" fill="#0f172a">student@cuiwah.edu.pk</text>
 
-<text x="55" y="275" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a">Institutional Email Address</text>
-<rect x="55" y="285" width="310" height="42" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
-<text x="70" y="311" font-family="Arial, sans-serif" font-size="11" fill="#0f172a">student@cuiwah.edu.pk</text>
+<text x="55" y="330" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a">Password</text>
+<rect x="55" y="340" width="310" height="42" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="70" y="366" font-family="Arial, sans-serif" font-size="11" fill="#0f172a">••••••••••••••••</text>
 
-<text x="55" y="350" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a">Password</text>
-<rect x="55" y="360" width="310" height="42" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
-<text x="70" y="386" font-family="Arial, sans-serif" font-size="11" fill="#0f172a">••••••••••••••••</text>
+<text x="365" y="405" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e3a8a" text-anchor="end">Forgot Password?</text>
 
-<text x="365" y="420" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e3a8a" text-anchor="end">Forgot Password?</text>
-
-<rect x="55" y="445" width="310" height="46" rx="8" fill="#1e3a8a"/>
-<text x="210" y="473" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">Sign In to Dashboard →</text>
+<rect x="55" y="435" width="310" height="46" rx="8" fill="#1e3a8a"/>
+<text x="210" y="463" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">Sign In to Dashboard →</text>
 
 <!-- Clean Non-Overlapping Registration Footer -->
-<text x="180" y="535" font-family="Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="end">Don't have an account?</text>
-<text x="188" y="535" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e3a8a" text-anchor="start">Register Here</text>
+<text x="180" y="525" font-family="Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="end">Don't have an account?</text>
+<text x="188" y="525" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e3a8a" text-anchor="start">Register Here</text>
 '''
     write_wireframe("WF03_Log_In_Screen", mobile_frame("Figure 3.3.3: User Login Screen (Authentication)", inner_03), "WF03 Log In Screen")
 

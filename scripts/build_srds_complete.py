@@ -86,6 +86,15 @@ def build_srds():
     r_doctype.font.size = Pt(16)
     r_doctype.font.color.rgb = RGBColor(30, 58, 138)
 
+    # Official MindEase Brand Identity Logo on Cover Page
+    logo_path = os.path.join("Documentation", "Brand", "MindEase_Logo_Horizontal.png")
+    if os.path.exists(logo_path):
+        p_logo = doc.add_paragraph()
+        p_logo.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p_logo.paragraph_format.space_before = Pt(8)
+        p_logo.paragraph_format.space_after = Pt(12)
+        doc.add_picture(logo_path, width=Inches(3.8))
+
     p_proj = doc.add_paragraph()
     p_proj.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p_proj.paragraph_format.space_before = Pt(24)
