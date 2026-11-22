@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1350" height="1540" viewBox="0 0 1350 1540">
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="1020" viewBox="0 0 1250 1020">
 <defs>
   <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
     <path d="M 0 0 L 10 5 L 0 10 z" fill="#000000"/>
@@ -7,151 +7,123 @@
     <path d="M 0 1 L 8 5 L 0 9" fill="none" stroke="#000000" stroke-width="1.5"/>
   </marker>
 </defs>
-<rect width="1350" height="1540" fill="#ffffff"/>
-<text x="675.0" y="38" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle">Figure 5.1: UML Use Case Diagram of MindEase AI System</text>
-<line x1="50" y1="52" x2="1300" y2="52" stroke="#d1d5db" stroke-width="1"/>
-<rect x="25" y="65" width="1300" height="1455" fill="none" stroke="#4b5563" stroke-width="1.2"/>
-<rect x="250" y="85" width="850" height="1415" fill="#ffffff" stroke="#000000" stroke-width="1.8"/>
-<text x="675" y="112" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#000000" text-anchor="middle" letter-spacing="1">SYSTEM BOUNDARY: MindEase AI Platform</text>
-<line x1="250" y1="124" x2="1100" y2="124" stroke="#000000" stroke-width="1.2"/>
-<ellipse cx="675" cy="158" rx="130.0" ry="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.4"/>
-<text x="675" y="155" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#000000" text-anchor="middle">UC02</text>
-<text x="675" y="169" font-family="Arial, sans-serif" font-size="10.5" fill="#000000" text-anchor="middle">Login &amp; Multi-Role Auth (JWT)</text>
-<ellipse cx="420" cy="220" rx="115.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
-<text x="420" y="217" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC01</text>
-<text x="420" y="230" font-family="Arial, sans-serif" font-size="9.5" fill="#000000" text-anchor="middle">Register & Onboard Profile</text>
-<ellipse cx="420" cy="280" rx="115.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
-<text x="420" y="277" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC03</text>
-<text x="420" y="290" font-family="Arial, sans-serif" font-size="9.5" fill="#000000" text-anchor="middle">Complete Stress Questionnaire</text>
-<ellipse cx="420" cy="340" rx="115.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
-<text x="420" y="337" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC04</text>
-<text x="420" y="350" font-family="Arial, sans-serif" font-size="9.5" fill="#000000" text-anchor="middle">Record Daily Voice &amp; Text Diary</text>
-<ellipse cx="420" cy="400" rx="115.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
-<text x="420" y="397" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC05</text>
-<text x="420" y="410" font-family="Arial, sans-serif" font-size="9.5" fill="#000000" text-anchor="middle">Log Daily Habits &amp; Biometrics</text>
-<ellipse cx="420" cy="470" rx="115.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
-<text x="420" y="467" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC06</text>
-<text x="420" y="480" font-family="Arial, sans-serif" font-size="9.5" fill="#000000" text-anchor="middle">View Stress Trends &amp; Baseline</text>
-<ellipse cx="420" cy="535" rx="115.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
-<text x="420" y="532" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC07</text>
-<text x="420" y="545" font-family="Arial, sans-serif" font-size="9.5" fill="#000000" text-anchor="middle">View Explainable AI Insights</text>
-<ellipse cx="420" cy="600" rx="115.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
-<text x="420" y="597" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC08</text>
-<text x="420" y="610" font-family="Arial, sans-serif" font-size="9.5" fill="#000000" text-anchor="middle">Access Relaxation Content</text>
-<ellipse cx="420" cy="665" rx="115.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
-<text x="420" y="662" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC09</text>
-<text x="420" y="675" font-family="Arial, sans-serif" font-size="9.5" fill="#000000" text-anchor="middle">Chat with AI Support Assistant</text>
-<ellipse cx="420" cy="730" rx="115.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
-<text x="420" y="727" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC10</text>
-<text x="420" y="740" font-family="Arial, sans-serif" font-size="9.5" fill="#000000" text-anchor="middle">Generate Adaptive Study Plan</text>
-<ellipse cx="420" cy="795" rx="115.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
+<rect width="1250" height="1020" fill="#ffffff"/>
+<text x="625.0" y="36" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">Figure 5.1: UML Use Case Diagram of MindEase AI System</text>
+<line x1="40" y1="48" x2="1210" y2="48" stroke="#d1d5db" stroke-width="1"/>
+<rect x="25" y="60" width="1200" height="940" fill="none" stroke="#4b5563" stroke-width="1.2"/>
+<rect x="240" y="78" width="770" height="904" fill="#ffffff" stroke="#000000" stroke-width="1.8"/>
+<text x="625" y="104" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#000000" text-anchor="middle" letter-spacing="1">SYSTEM BOUNDARY: MindEase AI Platform</text>
+<line x1="240" y1="116" x2="1010" y2="116" stroke="#000000" stroke-width="1.2"/>
+<ellipse cx="625" cy="148" rx="125.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.4"/>
+<text x="625" y="145" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#000000" text-anchor="middle">UC02</text>
+<text x="625" y="159" font-family="Arial, sans-serif" font-size="10" fill="#000000" text-anchor="middle">Login &amp; Multi-Role Auth (JWT)</text>
+<ellipse cx="405" cy="210" rx="112.5" ry="19.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
+<text x="405" y="207" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC01</text>
+<text x="405" y="220" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="middle">Register & Onboard Profile</text>
+<ellipse cx="405" cy="270" rx="112.5" ry="19.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
+<text x="405" y="267" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC03</text>
+<text x="405" y="280" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="middle">Complete Stress Questionnaire</text>
+<ellipse cx="405" cy="330" rx="112.5" ry="19.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
+<text x="405" y="327" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC04</text>
+<text x="405" y="340" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="middle">Record Daily Voice &amp; Text Diary</text>
+<ellipse cx="405" cy="390" rx="112.5" ry="19.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
+<text x="405" y="387" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC05</text>
+<text x="405" y="400" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="middle">Log Daily Habits &amp; Biometrics</text>
+<ellipse cx="405" cy="465" rx="112.5" ry="19.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
+<text x="405" y="462" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC06</text>
+<text x="405" y="475" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="middle">View Stress Trends &amp; Baseline</text>
+<ellipse cx="405" cy="530" rx="112.5" ry="19.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
+<text x="405" y="527" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC07</text>
+<text x="405" y="540" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="middle">View Explainable AI Insights</text>
+<ellipse cx="405" cy="605" rx="112.5" ry="19.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
+<text x="405" y="602" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC08</text>
+<text x="405" y="615" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="middle">Access Relaxation Content</text>
+<ellipse cx="405" cy="670" rx="112.5" ry="19.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
+<text x="405" y="667" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC09</text>
+<text x="405" y="680" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="middle">Chat with AI Support Assistant</text>
+<ellipse cx="405" cy="735" rx="112.5" ry="19.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
+<text x="405" y="732" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC10</text>
+<text x="405" y="745" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="middle">Generate Adaptive Study Plan</text>
+<ellipse cx="405" cy="805" rx="112.5" ry="19.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
 
-<text x="420" y="799" font-family="Arial, sans-serif" font-size="9.5" fill="#000000" text-anchor="middle">Calculate Stress-Calibrated Pomodoro</text>
-<ellipse cx="930" cy="220" rx="115.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
-<text x="930" y="217" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC11</text>
-<text x="930" y="230" font-family="Arial, sans-serif" font-size="9.5" fill="#000000" text-anchor="middle">Search Counselors &amp; Request Slot</text>
-<ellipse cx="930" cy="280" rx="115.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
-<text x="930" y="277" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC12</text>
-<text x="930" y="290" font-family="Arial, sans-serif" font-size="9.5" fill="#000000" text-anchor="middle">Conduct Counseling Session &amp; Notes</text>
-<ellipse cx="930" cy="340" rx="115.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
-<text x="930" y="337" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC13</text>
-<text x="930" y="350" font-family="Arial, sans-serif" font-size="9.5" fill="#000000" text-anchor="middle">Process Polar Payment (Test Mode)</text>
-<ellipse cx="930" cy="420" rx="115.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
-<text x="930" y="417" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC14</text>
-<text x="930" y="430" font-family="Arial, sans-serif" font-size="9.5" fill="#000000" text-anchor="middle">Create &amp; Interact in Peer Posts</text>
-<ellipse cx="930" cy="485" rx="115.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
-<text x="930" y="482" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC15</text>
-<text x="930" y="495" font-family="Arial, sans-serif" font-size="9.5" fill="#000000" text-anchor="middle">Report Inappropriate Post</text>
-<ellipse cx="930" cy="600" rx="115.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
-<text x="930" y="597" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC16</text>
-<text x="930" y="610" font-family="Arial, sans-serif" font-size="9.5" fill="#000000" text-anchor="middle">Manage Accounts &amp; Approvals</text>
-<ellipse cx="930" cy="665" rx="115.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
-<text x="930" y="662" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC17</text>
-<text x="930" y="675" font-family="Arial, sans-serif" font-size="9.5" fill="#000000" text-anchor="middle">Moderate Content &amp; Logs</text>
-<path d="M 535 535 L 565 535 L 565 470 L 535 470" fill="none" stroke="#000000" stroke-width="1.2" stroke-dasharray="4,4" marker-end="url(#dashed-arrow)"/>
-<text x="600" y="505" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="middle">&lt;&lt;extend&gt;&gt;</text>
-<path d="M 535 730 L 565 730 L 565 795 L 535 795" fill="none" stroke="#000000" stroke-width="1.2" stroke-dasharray="4,4" marker-end="url(#dashed-arrow)"/>
-<text x="600" y="765" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="middle">&lt;&lt;include&gt;&gt;</text>
-<path d="M 815 220 L 785 220 L 785 340 L 815 340" fill="none" stroke="#000000" stroke-width="1.2" stroke-dasharray="4,4" marker-end="url(#dashed-arrow)"/>
-<text x="750" y="280" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="middle">&lt;&lt;include&gt;&gt;</text>
-<path d="M 815 485 L 785 485 L 785 420 L 815 420" fill="none" stroke="#000000" stroke-width="1.2" stroke-dasharray="4,4" marker-end="url(#dashed-arrow)"/>
-<text x="750" y="455" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="middle">&lt;&lt;extend&gt;&gt;</text>
-<rect x="265" y="855" width="820" height="580" fill="none" stroke="#000000" stroke-width="1.4" stroke-dasharray="5,4"/>
-<text x="675.0" y="885" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#000000" text-anchor="middle">Automated Backend AI &amp; Cloud Services</text>
-<ellipse cx="445" cy="935" rx="120.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
-<text x="445" y="932" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">SRV01</text>
-<text x="445" y="945" font-family="Arial, sans-serif" font-size="9.5" fill="#000000" text-anchor="middle">Whisper STT Speech-to-Text</text>
-<ellipse cx="445" cy="1015" rx="120.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
-<text x="445" y="1012" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">SRV02</text>
-<text x="445" y="1025" font-family="Arial, sans-serif" font-size="9.5" fill="#000000" text-anchor="middle">Extract Linguistic &amp; Audio Features</text>
-<ellipse cx="445" cy="1095" rx="120.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
-<text x="445" y="1092" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">SRV03</text>
-<text x="445" y="1105" font-family="Arial, sans-serif" font-size="9.5" fill="#000000" text-anchor="middle">Multimodal Stress Fusion (BiLSTM)</text>
-<ellipse cx="445" cy="1185" rx="120.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
-<text x="445" y="1182" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">SRV04</text>
-<text x="445" y="1195" font-family="Arial, sans-serif" font-size="9.5" fill="#000000" text-anchor="middle">Trigger Crisis Helpline SOS Alert</text>
-<ellipse cx="905" cy="935" rx="120.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
-<text x="905" y="932" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">SRV05</text>
-<text x="905" y="945" font-family="Arial, sans-serif" font-size="9.5" fill="#000000" text-anchor="middle">Compute SHAP Feature Explanations</text>
-<ellipse cx="905" cy="1015" rx="120.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
-<text x="905" y="1012" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">SRV06</text>
-<text x="905" y="1025" font-family="Arial, sans-serif" font-size="9.5" fill="#000000" text-anchor="middle">Verify Polar Payment Webhooks</text>
-<ellipse cx="905" cy="1095" rx="120.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
-<text x="905" y="1092" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">SRV07</text>
-<text x="905" y="1105" font-family="Arial, sans-serif" font-size="9.5" fill="#000000" text-anchor="middle">Sync Encrypted Data to Supabase</text>
-<ellipse cx="905" cy="1185" rx="120.0" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
-<text x="905" y="1182" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">SRV08</text>
-<text x="905" y="1195" font-family="Arial, sans-serif" font-size="9.5" fill="#000000" text-anchor="middle">Redact Sensitive Diary Information</text>
-<line x1="445" y1="1164" x2="445" y2="1116" stroke="#000000" stroke-width="1.2" stroke-dasharray="4,4" marker-end="url(#dashed-arrow)"/>
-<text x="500" y="1144" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="middle">&lt;&lt;extend&gt;&gt;</text>
-<circle cx="135" cy="274" r="15" fill="#ffffff" stroke="#000000" stroke-width="1.8"/>
-<line x1="135" y1="289" x2="135" y2="324" stroke="#000000" stroke-width="1.8"/>
-<line x1="111" y1="303" x2="159" y2="303" stroke="#000000" stroke-width="1.8"/>
-<line x1="135" y1="324" x2="115" y2="358" stroke="#000000" stroke-width="1.8"/>
-<line x1="135" y1="324" x2="155" y2="358" stroke="#000000" stroke-width="1.8"/>
-<text x="135" y="380" font-family="Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#000000" text-anchor="middle">Student</text>
-<text x="135" y="395" font-family="Arial, sans-serif" font-size="10" fill="#444444" text-anchor="middle">(Daily Check-in)</text>
-<circle cx="135" cy="564" r="15" fill="#ffffff" stroke="#000000" stroke-width="1.8"/>
-<line x1="135" y1="579" x2="135" y2="614" stroke="#000000" stroke-width="1.8"/>
-<line x1="111" y1="593" x2="159" y2="593" stroke="#000000" stroke-width="1.8"/>
-<line x1="135" y1="614" x2="115" y2="648" stroke="#000000" stroke-width="1.8"/>
-<line x1="135" y1="614" x2="155" y2="648" stroke="#000000" stroke-width="1.8"/>
-<text x="135" y="670" font-family="Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#000000" text-anchor="middle">Student</text>
-<text x="135" y="685" font-family="Arial, sans-serif" font-size="10" fill="#444444" text-anchor="middle">(Wellness &amp; Study)</text>
-<circle cx="1215" cy="214" r="15" fill="#ffffff" stroke="#000000" stroke-width="1.8"/>
-<line x1="1215" y1="229" x2="1215" y2="264" stroke="#000000" stroke-width="1.8"/>
-<line x1="1191" y1="243" x2="1239" y2="243" stroke="#000000" stroke-width="1.8"/>
-<line x1="1215" y1="264" x2="1195" y2="298" stroke="#000000" stroke-width="1.8"/>
-<line x1="1215" y1="264" x2="1235" y2="298" stroke="#000000" stroke-width="1.8"/>
-<text x="1215" y="320" font-family="Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#000000" text-anchor="middle">Counselor</text>
-<text x="1215" y="335" font-family="Arial, sans-serif" font-size="10" fill="#444444" text-anchor="middle">(Mental Health Pro)</text>
-<circle cx="1215" cy="384" r="15" fill="#ffffff" stroke="#000000" stroke-width="1.8"/>
-<line x1="1215" y1="399" x2="1215" y2="434" stroke="#000000" stroke-width="1.8"/>
-<line x1="1191" y1="413" x2="1239" y2="413" stroke="#000000" stroke-width="1.8"/>
-<line x1="1215" y1="434" x2="1195" y2="468" stroke="#000000" stroke-width="1.8"/>
-<line x1="1215" y1="434" x2="1235" y2="468" stroke="#000000" stroke-width="1.8"/>
-<text x="1215" y="490" font-family="Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#000000" text-anchor="middle">Student</text>
-<text x="1215" y="505" font-family="Arial, sans-serif" font-size="10" fill="#444444" text-anchor="middle">(Community &amp; Booking)</text>
-<circle cx="1215" cy="594" r="15" fill="#ffffff" stroke="#000000" stroke-width="1.8"/>
-<line x1="1215" y1="609" x2="1215" y2="644" stroke="#000000" stroke-width="1.8"/>
-<line x1="1191" y1="623" x2="1239" y2="623" stroke="#000000" stroke-width="1.8"/>
-<line x1="1215" y1="644" x2="1195" y2="678" stroke="#000000" stroke-width="1.8"/>
-<line x1="1215" y1="644" x2="1235" y2="678" stroke="#000000" stroke-width="1.8"/>
-<text x="1215" y="700" font-family="Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#000000" text-anchor="middle">Administrator</text>
-<text x="1215" y="715" font-family="Arial, sans-serif" font-size="10" fill="#444444" text-anchor="middle">(System Admin)</text>
-<line x1="165" y1="310" x2="305.0" y2="220" stroke="#000000" stroke-width="1.1"/>
-<line x1="165" y1="310" x2="305.0" y2="280" stroke="#000000" stroke-width="1.1"/>
-<line x1="165" y1="310" x2="305.0" y2="340" stroke="#000000" stroke-width="1.1"/>
-<line x1="165" y1="310" x2="305.0" y2="400" stroke="#000000" stroke-width="1.1"/>
-<line x1="165" y1="600" x2="305.0" y2="470" stroke="#000000" stroke-width="1.1"/>
-<line x1="165" y1="600" x2="305.0" y2="535" stroke="#000000" stroke-width="1.1"/>
-<line x1="165" y1="600" x2="305.0" y2="600" stroke="#000000" stroke-width="1.1"/>
-<line x1="165" y1="600" x2="305.0" y2="665" stroke="#000000" stroke-width="1.1"/>
-<line x1="165" y1="600" x2="305.0" y2="730" stroke="#000000" stroke-width="1.1"/>
-<line x1="1185" y1="250" x2="1045.0" y2="220" stroke="#000000" stroke-width="1.1"/>
-<line x1="1185" y1="250" x2="1045.0" y2="280" stroke="#000000" stroke-width="1.1"/>
-<line x1="1185" y1="420" x2="1045.0" y2="340" stroke="#000000" stroke-width="1.1"/>
-<line x1="1185" y1="420" x2="1045.0" y2="420" stroke="#000000" stroke-width="1.1"/>
-<line x1="1185" y1="630" x2="1045.0" y2="600" stroke="#000000" stroke-width="1.1"/>
-<line x1="1185" y1="630" x2="1045.0" y2="665" stroke="#000000" stroke-width="1.1"/>
+<text x="405" y="809" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="middle">Calculate Stress-Calibrated Pomodoro</text>
+<ellipse cx="845" cy="210" rx="112.5" ry="19.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
+<text x="845" y="207" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC11</text>
+<text x="845" y="220" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="middle">Search Counselors &amp; Request Slot</text>
+<ellipse cx="845" cy="280" rx="112.5" ry="19.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
+<text x="845" y="277" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC12</text>
+<text x="845" y="290" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="middle">Conduct Counseling Session &amp; Notes</text>
+<ellipse cx="845" cy="355" rx="112.5" ry="19.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
+<text x="845" y="352" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC13</text>
+<text x="845" y="365" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="middle">Process Polar Payment (Test Mode)</text>
+<ellipse cx="845" cy="460" rx="112.5" ry="19.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
+<text x="845" y="457" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC14</text>
+<text x="845" y="470" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="middle">Create &amp; Interact in Peer Posts</text>
+<ellipse cx="845" cy="530" rx="112.5" ry="19.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
+<text x="845" y="527" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC15</text>
+<text x="845" y="540" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="middle">Report Inappropriate Post</text>
+<ellipse cx="845" cy="650" rx="112.5" ry="19.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
+<text x="845" y="647" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC16</text>
+<text x="845" y="660" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="middle">Manage Accounts &amp; Approvals</text>
+<ellipse cx="845" cy="725" rx="112.5" ry="19.0" fill="#ffffff" stroke="#000000" stroke-width="1.3"/>
+<text x="845" y="722" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#000000" text-anchor="middle">UC17</text>
+<text x="845" y="735" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="middle">Moderate Content &amp; Logs</text>
+<path d="M 518 530 L 545 530 L 545 465 L 518 465" fill="none" stroke="#000000" stroke-width="1.2" stroke-dasharray="4,4" marker-end="url(#dashed-arrow)"/>
+<text x="580" y="500" font-family="Arial, sans-serif" font-size="8.5" fill="#000000" text-anchor="middle">&lt;&lt;extend&gt;&gt;</text>
+<path d="M 518 735 L 545 735 L 545 805 L 518 805" fill="none" stroke="#000000" stroke-width="1.2" stroke-dasharray="4,4" marker-end="url(#dashed-arrow)"/>
+<text x="580" y="772" font-family="Arial, sans-serif" font-size="8.5" fill="#000000" text-anchor="middle">&lt;&lt;include&gt;&gt;</text>
+<path d="M 732 210 L 705 210 L 705 355 L 732 355" fill="none" stroke="#000000" stroke-width="1.2" stroke-dasharray="4,4" marker-end="url(#dashed-arrow)"/>
+<text x="672" y="285" font-family="Arial, sans-serif" font-size="8.5" fill="#000000" text-anchor="middle">&lt;&lt;include&gt;&gt;</text>
+<path d="M 732 530 L 705 530 L 705 460 L 732 460" fill="none" stroke="#000000" stroke-width="1.2" stroke-dasharray="4,4" marker-end="url(#dashed-arrow)"/>
+<text x="672" y="497" font-family="Arial, sans-serif" font-size="8.5" fill="#000000" text-anchor="middle">&lt;&lt;extend&gt;&gt;</text>
+<circle cx="130" cy="258" r="13" fill="#ffffff" stroke="#000000" stroke-width="1.7"/>
+<line x1="130" y1="271" x2="130" y2="302" stroke="#000000" stroke-width="1.7"/>
+<line x1="110" y1="284" x2="150" y2="284" stroke="#000000" stroke-width="1.7"/>
+<line x1="130" y1="302" x2="114" y2="332" stroke="#000000" stroke-width="1.7"/>
+<line x1="130" y1="302" x2="146" y2="332" stroke="#000000" stroke-width="1.7"/>
+<text x="130" y="352" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#000000" text-anchor="middle">Student</text>
+<text x="130" y="365" font-family="Arial, sans-serif" font-size="9.5" fill="#444444" text-anchor="middle">(Daily Check-in)</text>
+<circle cx="130" cy="608" r="13" fill="#ffffff" stroke="#000000" stroke-width="1.7"/>
+<line x1="130" y1="621" x2="130" y2="652" stroke="#000000" stroke-width="1.7"/>
+<line x1="110" y1="634" x2="150" y2="634" stroke="#000000" stroke-width="1.7"/>
+<line x1="130" y1="652" x2="114" y2="682" stroke="#000000" stroke-width="1.7"/>
+<line x1="130" y1="652" x2="146" y2="682" stroke="#000000" stroke-width="1.7"/>
+<text x="130" y="702" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#000000" text-anchor="middle">Student</text>
+<text x="130" y="715" font-family="Arial, sans-serif" font-size="9.5" fill="#444444" text-anchor="middle">(Wellness &amp; Study)</text>
+<circle cx="1120" cy="213" r="13" fill="#ffffff" stroke="#000000" stroke-width="1.7"/>
+<line x1="1120" y1="226" x2="1120" y2="257" stroke="#000000" stroke-width="1.7"/>
+<line x1="1100" y1="239" x2="1140" y2="239" stroke="#000000" stroke-width="1.7"/>
+<line x1="1120" y1="257" x2="1104" y2="287" stroke="#000000" stroke-width="1.7"/>
+<line x1="1120" y1="257" x2="1136" y2="287" stroke="#000000" stroke-width="1.7"/>
+<text x="1120" y="307" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#000000" text-anchor="middle">Counselor</text>
+<text x="1120" y="320" font-family="Arial, sans-serif" font-size="9.5" fill="#444444" text-anchor="middle">(Mental Health Pro)</text>
+<circle cx="1120" cy="453" r="13" fill="#ffffff" stroke="#000000" stroke-width="1.7"/>
+<line x1="1120" y1="466" x2="1120" y2="497" stroke="#000000" stroke-width="1.7"/>
+<line x1="1100" y1="479" x2="1140" y2="479" stroke="#000000" stroke-width="1.7"/>
+<line x1="1120" y1="497" x2="1104" y2="527" stroke="#000000" stroke-width="1.7"/>
+<line x1="1120" y1="497" x2="1136" y2="527" stroke="#000000" stroke-width="1.7"/>
+<text x="1120" y="547" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#000000" text-anchor="middle">Student</text>
+<text x="1120" y="560" font-family="Arial, sans-serif" font-size="9.5" fill="#444444" text-anchor="middle">(Community &amp; Booking)</text>
+<circle cx="1120" cy="653" r="13" fill="#ffffff" stroke="#000000" stroke-width="1.7"/>
+<line x1="1120" y1="666" x2="1120" y2="697" stroke="#000000" stroke-width="1.7"/>
+<line x1="1100" y1="679" x2="1140" y2="679" stroke="#000000" stroke-width="1.7"/>
+<line x1="1120" y1="697" x2="1104" y2="727" stroke="#000000" stroke-width="1.7"/>
+<line x1="1120" y1="697" x2="1136" y2="727" stroke="#000000" stroke-width="1.7"/>
+<text x="1120" y="747" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#000000" text-anchor="middle">Administrator</text>
+<text x="1120" y="760" font-family="Arial, sans-serif" font-size="9.5" fill="#444444" text-anchor="middle">(System Admin)</text>
+<line x1="160" y1="290" x2="292.5" y2="210" stroke="#000000" stroke-width="1.1"/>
+<line x1="160" y1="290" x2="292.5" y2="270" stroke="#000000" stroke-width="1.1"/>
+<line x1="160" y1="290" x2="292.5" y2="330" stroke="#000000" stroke-width="1.1"/>
+<line x1="160" y1="290" x2="292.5" y2="390" stroke="#000000" stroke-width="1.1"/>
+<line x1="160" y1="640" x2="292.5" y2="465" stroke="#000000" stroke-width="1.1"/>
+<line x1="160" y1="640" x2="292.5" y2="530" stroke="#000000" stroke-width="1.1"/>
+<line x1="160" y1="640" x2="292.5" y2="605" stroke="#000000" stroke-width="1.1"/>
+<line x1="160" y1="640" x2="292.5" y2="670" stroke="#000000" stroke-width="1.1"/>
+<line x1="160" y1="640" x2="292.5" y2="735" stroke="#000000" stroke-width="1.1"/>
+<line x1="1090" y1="245" x2="957.5" y2="210" stroke="#000000" stroke-width="1.1"/>
+<line x1="1090" y1="245" x2="957.5" y2="280" stroke="#000000" stroke-width="1.1"/>
+<line x1="1090" y1="485" x2="957.5" y2="355" stroke="#000000" stroke-width="1.1"/>
+<line x1="1090" y1="485" x2="957.5" y2="460" stroke="#000000" stroke-width="1.1"/>
+<line x1="1090" y1="685" x2="957.5" y2="650" stroke="#000000" stroke-width="1.1"/>
+<line x1="1090" y1="685" x2="957.5" y2="725" stroke="#000000" stroke-width="1.1"/>
 </svg>
