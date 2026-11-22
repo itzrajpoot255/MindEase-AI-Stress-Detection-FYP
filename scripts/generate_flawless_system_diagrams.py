@@ -328,7 +328,7 @@ def build_use_case_diagram():
 # 03_DFD_Level_0 (Context Diagram - NO CLUNKY WHITE BOXES, ZERO COLLISION)
 # =============================================================================
 def build_dfd_level_0():
-    w, h = 1400, 920
+    w, h = 1600, 950
     b = DrawioBuilder("03_DFD_Level_0", w, h)
 
     svg = [
@@ -343,70 +343,80 @@ def build_dfd_level_0():
         f'<line x1="50" y1="50" x2="{w-50}" y2="50" stroke="#d1d5db" stroke-width="1"/>',
         f'<rect x="25" y="65" width="{w-50}" height="{h-85}" fill="none" stroke="#64748b" stroke-width="1.2"/>',
 
-        # Central Process 0.0 (Radius = 140, centered at cx=700, cy=460)
-        '<circle cx="700" cy="460" r="140" fill="#ffffff" stroke="#1e3a8a" stroke-width="2.5"/>',
-        '<line x1="565" y1="410" x2="835" y2="410" stroke="#1e3a8a" stroke-width="1.5"/>',
-        '<text x="700" y="385" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e3a8a" text-anchor="middle">0.0</text>',
-        '<text x="700" y="445" font-family="Arial, sans-serif" font-size="13.5" font-weight="bold" fill="#0f172a" text-anchor="middle">MindEase AI Stress Detection,</text>',
-        '<text x="700" y="468" font-family="Arial, sans-serif" font-size="13.5" font-weight="bold" fill="#0f172a" text-anchor="middle">Recovery &amp; Support</text>',
-        '<text x="700" y="491" font-family="Arial, sans-serif" font-size="13.5" font-weight="bold" fill="#0f172a" text-anchor="middle">System</text>',
+        # Central Process 0.0 (Radius = 145, centered at cx=800, cy=475)
+        '<circle cx="800" cy="475" r="145" fill="#ffffff" stroke="#1e3a8a" stroke-width="2.5"/>',
+        '<line x1="660" y1="425" x2="940" y2="425" stroke="#1e3a8a" stroke-width="1.5"/>',
+        '<text x="800" y="400" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e3a8a" text-anchor="middle">0.0</text>',
+        '<text x="800" y="455" font-family="Arial, sans-serif" font-size="13.5" font-weight="bold" fill="#0f172a" text-anchor="middle">MindEase AI Stress Detection,</text>',
+        '<text x="800" y="480" font-family="Arial, sans-serif" font-size="13.5" font-weight="bold" fill="#0f172a" text-anchor="middle">Recovery &amp; Support Platform</text>',
+        '<text x="800" y="505" font-family="Arial, sans-serif" font-size="11" font-style="italic" fill="#475569" text-anchor="middle">(Core System Boundary)</text>',
     ]
 
-    # External Entities
-    ent_w, ent_h = 240, 80
+    # External Entities (Width = 260, Height = 84)
+    ent_w, ent_h = 260, 84
 
     # 1. Student (Top Left)
-    s_x, s_y = 60, 140
+    s_x, s_y = 80, 140
     svg.extend([
         f'<rect x="{s_x}" y="{s_y}" width="{ent_w}" height="{ent_h}" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>',
-        f'<text x="{s_x+ent_w/2}" y="{s_y+34}" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Student</text>',
-        f'<text x="{s_x+ent_w/2}" y="{s_y+54}" font-family="Arial, sans-serif" font-size="11.5" fill="#475569" text-anchor="middle">(Primary User)</text>',
+        f'<text x="{s_x+ent_w/2}" y="{s_y+36}" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Student</text>',
+        f'<text x="{s_x+ent_w/2}" y="{s_y+58}" font-family="Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">(Primary User)</text>',
     ])
 
     # 2. Polar Gateway (Bottom Left)
-    p_x, p_y = 60, 700
+    p_x, p_y = 80, 720
     svg.extend([
         f'<rect x="{p_x}" y="{p_y}" width="{ent_w}" height="{ent_h}" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>',
-        f'<text x="{p_x+ent_w/2}" y="{p_y+34}" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Polar Gateway</text>',
-        f'<text x="{p_x+ent_w/2}" y="{p_y+54}" font-family="Arial, sans-serif" font-size="11.5" fill="#475569" text-anchor="middle">(External Payment Service)</text>',
+        f'<text x="{p_x+ent_w/2}" y="{p_y+36}" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Polar Gateway</text>',
+        f'<text x="{p_x+ent_w/2}" y="{p_y+58}" font-family="Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">(External Payment Service)</text>',
     ])
 
     # 3. Counselor (Top Right)
-    c_x, c_y = 1100, 140
+    c_x, c_y = 1260, 140
     svg.extend([
         f'<rect x="{c_x}" y="{c_y}" width="{ent_w}" height="{ent_h}" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>',
-        f'<text x="{c_x+ent_w/2}" y="{c_y+34}" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Counselor</text>',
-        f'<text x="{c_x+ent_w/2}" y="{c_y+54}" font-family="Arial, sans-serif" font-size="11.5" fill="#475569" text-anchor="middle">(Mental Health Professional)</text>',
+        f'<text x="{c_x+ent_w/2}" y="{c_y+36}" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Counselor</text>',
+        f'<text x="{c_x+ent_w/2}" y="{c_y+58}" font-family="Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">(Mental Health Professional)</text>',
     ])
 
     # 4. Administrator (Bottom Right)
-    a_x, a_y = 1100, 700
+    a_x, a_y = 1260, 720
     svg.extend([
         f'<rect x="{a_x}" y="{a_y}" width="{ent_w}" height="{ent_h}" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>',
-        f'<text x="{a_x+ent_w/2}" y="{a_y+34}" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Administrator</text>',
-        f'<text x="{a_x+ent_w/2}" y="{a_y+54}" font-family="Arial, sans-serif" font-size="11.5" fill="#475569" text-anchor="middle">(System Admin)</text>',
+        f'<text x="{a_x+ent_w/2}" y="{a_y+36}" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Administrator</text>',
+        f'<text x="{a_x+ent_w/2}" y="{a_y+58}" font-family="Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">(System Admin)</text>',
     ])
 
-    # Clean Orthogonal Flow Helper - TEXT PLACED CLEANLY ABOVE THE LINE WITHOUT WHITE RECTANGLES
-    def add_clean_flow(path_d, label, tx, ty, anchor="middle"):
+    # Clean Orthogonal Flow Helper - Crisp 2-line labels, zero collision, zero white boxes
+    def add_flow(path_d, line1, line2, tx, ty, anchor="middle"):
         svg.append(f'<path d="{path_d}" fill="none" stroke="#1e3a8a" stroke-width="1.6" marker-end="url(#arrow)"/>')
-        svg.append(f'<text x="{tx}" y="{ty}" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#1e3a8a" text-anchor="{anchor}">{label}</text>')
+        svg.append(f'<text x="{tx}" y="{ty}" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e3a8a" text-anchor="{anchor}">{line1}</text>')
+        if line2:
+            svg.append(f'<text x="{tx}" y="{ty+14}" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="{anchor}">{line2}</text>')
 
     # 1. Student <-> MindEase (Top Left)
-    add_clean_flow("M 300 160 L 610 160 L 610 338", "Questionnaire Responses, Voice Diary, Habit Logs (Sleep, Steps)", 455, 150)
-    add_clean_flow("M 575 390 L 575 200 L 300 200", "Stress Level (L/M/H), XAI Insights, Adaptive Study Plan, Relaxation Audio", 455, 192)
+    # Student -> System
+    add_flow("M 340 160 L 690 160 L 690 345", "Questionnaire Responses, Voice Diary &amp; Habit Logs", "(Sleep Duration, Daily Step Count, Screen Time)", 515, 138)
+    # System -> Student
+    add_flow("M 655 420 L 655 205 L 340 205", "Stress Level (L/M/H), SHAP XAI Insights &amp; Study Plans", "(Pomodoro Intervals, Audio Exercises, Support Bot)", 495, 185)
 
     # 2. Counselor <-> MindEase (Top Right)
-    add_clean_flow("M 1100 160 L 790 160 L 790 338", "Availability Slots, Clinical Assessment Notes", 945, 150)
-    add_clean_flow("M 825 390 L 825 200 L 1100 200", "Appointment Booking Requests, Consented Student Dossiers", 945, 192)
+    # Counselor -> System
+    add_flow("M 1260 160 L 910 160 L 910 345", "Counselor Availability Slots &amp; Clinical Notes", "(Scheduled Office Hours, Student Progress Notes)", 1085, 138)
+    # System -> Counselor
+    add_flow("M 945 420 L 945 205 L 1260 205", "Confirmed Appointment Requests &amp; Patient Dossiers", "(Consented Longitudinal Stress Trends &amp; Baseline)", 1105, 185)
 
     # 3. Polar Gateway <-> MindEase (Bottom Left)
-    add_clean_flow("M 575 530 L 575 720 L 300 720", "Checkout Session Token &amp; Booking Reference Request", 440, 712)
-    add_clean_flow("M 300 760 L 610 760 L 610 582", "Webhook Payment Confirmation Token (Success / Decline)", 455, 752)
+    # System -> Polar Gateway
+    add_flow("M 655 530 L 655 745 L 340 745", "Checkout Session Creation &amp; Payment Intent", "(Booking Reference, Appointment Fee in USD/PKR)", 495, 725)
+    # Polar Gateway -> System
+    add_flow("M 340 790 L 690 790 L 690 605", "Polar Webhook Payment Notification Token", "(Signature Verification, Payment Status: Success/Fail)", 515, 810)
 
     # 4. Administrator <-> MindEase (Bottom Right)
-    add_clean_flow("M 825 530 L 825 720 L 1100 720", "Reported Community Post Queue, Audit Telemetry Logs", 960, 712)
-    add_clean_flow("M 1100 760 L 790 760 L 790 582", "Moderation Actions, Content Updates, Counselor Approvals", 945, 752)
+    # System -> Administrator
+    add_flow("M 945 530 L 945 745 L 1260 745", "Reported Posts Queue &amp; System Telemetry Logs", "(Audit Logs, AI Pipeline Health, Error Telemetry)", 1105, 725)
+    # Administrator -> System
+    add_flow("M 1260 790 L 910 790 L 910 605", "Moderation Actions &amp; System Configuration", "(Counselor Verification, Content Deletion, Auth Roles)", 1085, 810)
 
     svg.append('</svg>')
     save_and_render("03_DFD_Level_0", "\n".join(svg), b.to_xml())
@@ -415,7 +425,7 @@ def build_dfd_level_0():
 # 04_DFD_Level_1 (Subsystem Functional Decomposition - 200px GAP, ZERO COLLISION)
 # =============================================================================
 def build_dfd_level_1():
-    w, h = 1600, 980
+    w, h = 1750, 1000
     b = DrawioBuilder("04_DFD_Level_1", w, h)
 
     svg = [
@@ -431,14 +441,14 @@ def build_dfd_level_1():
         f'<rect x="25" y="65" width="{w-50}" height="{h-85}" fill="none" stroke="#64748b" stroke-width="1.2"/>',
     ]
 
-    def draw_proc(num, title1, title2, cx, cy, r=50):
+    def draw_proc(num, title1, title2, cx, cy, r=48):
         svg.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="#ffffff" stroke="#1e3a8a" stroke-width="2"/>')
-        svg.append(f'<line x1="{cx-r*0.9}" y1="{cy-12}" x2="{cx+r*0.9}" y2="{cy-12}" stroke="#1e3a8a" stroke-width="1.2"/>')
-        svg.append(f'<text x="{cx}" y="{cy-20}" font-family="Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#1e3a8a" text-anchor="middle">{num}</text>')
-        svg.append(f'<text x="{cx}" y="{cy+4}" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#0f172a" text-anchor="middle">{title1}</text>')
-        svg.append(f'<text x="{cx}" y="{cy+18}" font-family="Arial, sans-serif" font-size="9" fill="#0f172a" text-anchor="middle">{title2}</text>')
+        svg.append(f'<line x1="{cx-r*0.9}" y1="{cy-10}" x2="{cx+r*0.9}" y2="{cy-10}" stroke="#1e3a8a" stroke-width="1.2"/>')
+        svg.append(f'<text x="{cx}" y="{cy-18}" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e3a8a" text-anchor="middle">{num}</text>')
+        svg.append(f'<text x="{cx}" y="{cy+6}" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#0f172a" text-anchor="middle">{title1}</text>')
+        svg.append(f'<text x="{cx}" y="{cy+19}" font-family="Arial, sans-serif" font-size="9" fill="#0f172a" text-anchor="middle">{title2}</text>')
 
-    def draw_dstore(num, name, x, y, w_box=170, h_box=32):
+    def draw_dstore(num, name, x, y, w_box=180, h_box=32):
         svg.append(f'<line x1="{x}" y1="{y}" x2="{x+w_box}" y2="{y}" stroke="#0f172a" stroke-width="1.8"/>')
         svg.append(f'<line x1="{x}" y1="{y+h_box}" x2="{x+w_box}" y2="{y+h_box}" stroke="#0f172a" stroke-width="1.8"/>')
         svg.append(f'<line x1="{x}" y1="{y}" x2="{x}" y2="{y+h_box}" stroke="#0f172a" stroke-width="1.8"/>')
@@ -448,107 +458,109 @@ def build_dfd_level_1():
         svg.append(f'<text x="{x+44}" y="{y+20}" font-family="Arial, sans-serif" font-size="9.5" font-weight="600" fill="#0f172a">{name}</text>')
 
     # External Entities
-    st_x, st_y, ent_w, ent_h = 50, 410, 150, 90
+    st_x, st_y, ent_w, ent_h = 60, 390, 180, 100
     svg.extend([
         f'<rect x="{st_x}" y="{st_y}" width="{ent_w}" height="{ent_h}" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>',
-        f'<text x="{st_x+ent_w/2}" y="{st_y+40}" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Student</text>',
-        f'<text x="{st_x+ent_w/2}" y="{st_y+62}" font-family="Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">(Primary User)</text>',
+        f'<text x="{st_x+ent_w/2}" y="{st_y+42}" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Student</text>',
+        f'<text x="{st_x+ent_w/2}" y="{st_y+64}" font-family="Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">(Primary User)</text>',
     ])
 
     # Counselor (Top Right)
-    c_x, c_y = 1390, 140
+    c_x, c_y = 1550, 138
     svg.extend([
-        f'<rect x="{c_x}" y="{c_y}" width="{ent_w}" height="{ent_h}" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>',
-        f'<text x="{c_x+ent_w/2}" y="{c_y+40}" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Counselor</text>',
-        f'<text x="{c_x+ent_w/2}" y="{c_y+62}" font-family="Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">(Clinical Pro)</text>',
+        f'<rect x="{c_x}" y="{c_y}" width="{ent_w-20}" height="{ent_h-15}" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>',
+        f'<text x="{c_x+(ent_w-20)/2}" y="{c_y+38}" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Counselor</text>',
+        f'<text x="{c_x+(ent_w-20)/2}" y="{c_y+58}" font-family="Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">(Clinical Pro)</text>',
     ])
 
     # Administrator (Middle Right)
-    a_x, a_y = 1390, 440
+    a_x, a_y = 1550, 438
     svg.extend([
-        f'<rect x="{a_x}" y="{a_y}" width="{ent_w}" height="{ent_h}" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>',
-        f'<text x="{a_x+ent_w/2}" y="{a_y+40}" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Administrator</text>',
-        f'<text x="{a_x+ent_w/2}" y="{a_y+62}" font-family="Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">(System Admin)</text>',
+        f'<rect x="{a_x}" y="{a_y}" width="{ent_w-20}" height="{ent_h-15}" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>',
+        f'<text x="{a_x+(ent_w-20)/2}" y="{a_y+38}" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Administrator</text>',
+        f'<text x="{a_x+(ent_w-20)/2}" y="{a_y+58}" font-family="Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">(System Admin)</text>',
     ])
 
     # Polar Gateway (Bottom Right)
-    p_x, p_y = 1390, 740
+    p_x, p_y = 1550, 738
     svg.extend([
-        f'<rect x="{p_x}" y="{p_y}" width="{ent_w}" height="{ent_h}" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>',
-        f'<text x="{p_x+ent_w/2}" y="{p_y+40}" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Polar Gateway</text>',
-        f'<text x="{p_x+ent_w/2}" y="{p_y+62}" font-family="Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">(Payment)</text>',
+        f'<rect x="{p_x}" y="{p_y}" width="{ent_w-20}" height="{ent_h-15}" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>',
+        f'<text x="{p_x+(ent_w-20)/2}" y="{p_y+38}" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Polar Gateway</text>',
+        f'<text x="{p_x+(ent_w-20)/2}" y="{p_y+58}" font-family="Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">(Payment)</text>',
     ])
 
-    # COLUMN 1: Student-Facing Processes (at cx=450 - massive 200px gap from Student box at x=200!)
-    draw_proc("1.0", "Manage Auth", "&amp; Profiles", 450, 160)
-    draw_proc("2.0", "Questionnaire", "&amp; Scoring", 450, 360)
-    draw_proc("3.0", "Voice Diary", "&amp; Whisper STT", 450, 560)
-    draw_proc("4.0", "Habit Tracking &amp;", "Fusion Model", 450, 780)
+    # COLUMN 1: Student-Facing Processes (at cx=540 - 300px runway from Student box!)
+    draw_proc("1.0", "Manage Auth", "&amp; Profiles", 540, 150)
+    draw_proc("2.0", "Questionnaire", "&amp; Scoring", 540, 350)
+    draw_proc("3.0", "Voice Diary", "&amp; Whisper STT", 540, 550)
+    draw_proc("4.0", "Habit Tracking &amp;", "Fusion Model", 540, 780)
 
-    # DATA STORES (Column 1 Stores at x=610)
-    draw_dstore("D1", "Users &amp; Auth Store", 610, 144)
-    draw_dstore("D2", "Stress Assessments", 610, 344)
-    draw_dstore("D3", "Encrypted Diaries", 610, 544)
+    # DATA STORES (Column 1 Stores at x=710..890)
+    draw_dstore("D1", "Users &amp; Auth Store", 710, 134)
+    draw_dstore("D2", "Stress Assessments", 710, 334)
+    draw_dstore("D3", "Encrypted Diaries", 710, 534)
 
-    # COLUMN 2: Intelligence & Planning Processes (at cx=880)
-    draw_proc("5.0", "Baseline &amp; XAI", "Attribution", 880, 460)
-    draw_proc("6.0", "Adaptive Study", "&amp; Recovery Plan", 880, 780)
-    draw_dstore("D4", "Study Plans &amp; Tasks", 980, 764)
+    # COLUMN 2: Intelligence & Planning Processes (at cx=1080)
+    draw_proc("5.0", "Baseline &amp; XAI", "Attribution", 1080, 440)
+    draw_proc("6.0", "Adaptive Study", "&amp; Recovery Plan", 1080, 780)
+    draw_dstore("D4", "Study Plans &amp; Tasks", 1180, 764)
 
-    # COLUMN 3: Clinical, Community & Payment Processes (at cx=1220)
-    draw_proc("7.0", "Counselor Booking", "&amp; Sessions", 1220, 190)
-    draw_proc("8.0", "Community Forum", "&amp; Moderation", 1220, 480)
-    draw_proc("9.0", "Polar Payment", "&amp; Webhook", 1220, 780)
-    draw_dstore("D5", "Appointments &amp; Notes", 1000, 174)
-    draw_dstore("D6", "Community Posts", 1000, 464)
+    # COLUMN 3: Clinical, Community & Payment Processes (at cx=1420)
+    draw_proc("7.0", "Counselor Booking", "&amp; Sessions", 1420, 180)
+    draw_proc("8.0", "Community Forum", "&amp; Moderation", 1420, 480)
+    draw_proc("9.0", "Polar Payment", "&amp; Webhook", 1420, 780)
+    draw_dstore("D5", "Appointments &amp; Notes", 1200, 164)
+    draw_dstore("D6", "Community Posts", 1200, 464)
 
     def add_clean_flow(path_d, label, tx, ty, anchor="middle"):
         svg.append(f'<path d="{path_d}" fill="none" stroke="#1e3a8a" stroke-width="1.4" marker-end="url(#arrow)"/>')
         svg.append(f'<text x="{tx}" y="{ty}" font-family="Arial, sans-serif" font-size="9" font-weight="600" fill="#1e3a8a" text-anchor="{anchor}">{label}</text>')
 
-    # Student to Column 1 (Ample 160px horizontal runs - ZERO COLLISION!)
+    # Student to Column 1 (Staggered orthogonal lines - ZERO COLLISION!)
     # To 1.0 (Auth)
-    add_clean_flow("M 200 425 L 240 425 L 240 160 L 400 160", "Register / Credentials", 320, 150)
-    # To 2.0 (Questionnaire) - 50px clearance on both sides!
-    add_clean_flow("M 200 445 L 260 445 L 260 360 L 400 360", "PSS Questionnaire Responses", 330, 350)
+    add_clean_flow("M 240 410 L 300 410 L 300 150 L 492 150", "Credentials &amp; Profile Data", 396, 142)
+    # To 2.0 (Questionnaire)
+    add_clean_flow("M 240 430 L 340 430 L 340 350 L 492 350", "PSS Questionnaire Responses", 416, 342)
     # To 3.0 (Voice Diary)
-    add_clean_flow("M 200 465 L 260 465 L 260 560 L 400 560", "Voice Audio &amp; Text Diary", 330, 550)
+    add_clean_flow("M 240 450 L 340 450 L 340 550 L 492 550", "Voice Audio &amp; Text Logs", 416, 542)
     # To 4.0 (Habits)
-    add_clean_flow("M 200 485 L 240 485 L 240 780 L 400 780", "Sleep, Steps, Screen Time", 320, 770)
+    add_clean_flow("M 240 470 L 300 470 L 300 780 L 492 780", "Sleep, Steps &amp; Activity", 396, 772)
 
     # Column 1 to Stores
-    add_clean_flow("M 500 160 L 610 160", "Profile Record", 555, 150)
-    add_clean_flow("M 500 360 L 610 360", "Questionnaire Score", 555, 350)
-    add_clean_flow("M 500 560 L 610 560", "Encrypted Audio &amp; Text", 555, 550)
+    add_clean_flow("M 588 150 L 710 150", "User Record", 649, 142)
+    add_clean_flow("M 588 350 L 710 350", "Assessment Score", 649, 342)
+    add_clean_flow("M 588 550 L 710 550", "Encrypted Diary", 649, 542)
 
     # Fusion Pipeline to 5.0 (Baseline & XAI)
-    add_clean_flow("M 500 780 L 570 780 L 570 460 L 830 460", "Multimodal Feature Vector", 700, 450)
-    add_clean_flow("M 780 360 L 880 360 L 880 410", "Assessment Snapshot", 830, 350)
-    add_clean_flow("M 880 510 L 880 730", "Stress Level &amp; XAI Drivers", 888, 620, "start")
-    add_clean_flow("M 930 780 L 980 780", "Scheduled Tasks", 955, 770)
+    add_clean_flow("M 588 780 L 760 780 L 760 440 L 1032 440", "Multimodal Feature Vector", 896, 432)
+    add_clean_flow("M 890 350 L 950 350 L 950 420 L 1032 420", "PSS Baseline", 985, 412)
+    add_clean_flow("M 890 550 L 950 550 L 950 460 L 1032 460", "Speech Sentiment", 985, 472)
+    add_clean_flow("M 1080 488 L 1080 732", "Stress Level (L/M/H) &amp; SHAP Drivers", 1092, 610, "start")
+    add_clean_flow("M 1128 780 L 1180 780", "Study Plan", 1154, 772)
 
     # Right Side: Counselor & Appointments
-    add_clean_flow("M 1390 170 L 1270 170", "Availability Slots", 1330, 160)
-    add_clean_flow("M 1270 210 L 1390 210", "Confirmed Sessions", 1330, 200)
-    add_clean_flow("M 1170 190 L 1150 190", "Appt Records", 1160, 180)
+    add_clean_flow("M 1550 165 L 1468 165", "Availability Slots", 1509, 157)
+    add_clean_flow("M 1468 195 L 1550 195", "Booked Calendar", 1509, 207)
+    add_clean_flow("M 1380 180 L 1412 180", "Session Notes", 1396, 172)
 
     # Community
-    add_clean_flow("M 1390 480 L 1270 480", "Moderation Actions", 1330, 470)
-    add_clean_flow("M 1170 480 L 1150 480", "Post Feed", 1160, 470)
+    add_clean_flow("M 1550 465 L 1468 465", "Moderation Action", 1509, 457)
+    add_clean_flow("M 1468 495 L 1550 495", "Flagged Posts Queue", 1509, 507)
+    add_clean_flow("M 1380 480 L 1412 480", "Post Feeds", 1396, 472)
 
     # Polar Payment (Bottom Right)
-    add_clean_flow("M 1220 730 L 1220 240", "Confirmed Paid Appt", 1228, 350, "start")
-    add_clean_flow("M 1270 760 L 1390 760", "Checkout Request", 1330, 750)
-    add_clean_flow("M 1390 800 L 1270 800", "Webhook Token", 1330, 790)
+    add_clean_flow("M 1420 732 L 1420 228", "Confirmed Payment &amp; Booking Token", 1432, 350, "start")
+    add_clean_flow("M 1468 765 L 1550 765", "Checkout Request", 1509, 757)
+    add_clean_flow("M 1550 795 L 1468 795", "Webhook Success Token", 1509, 807)
 
     svg.append('</svg>')
     save_and_render("04_DFD_Level_1", "\n".join(svg), b.to_xml())
 
 # =============================================================================
-# 05_DFD_Level_2_Stress_Detection (NO CLUNKY WHITE BOXES)
+# 05_DFD_Level_2_Stress_Detection (NO CLUNKY WHITE BOXES, ZERO COLLISION)
 # =============================================================================
 def build_dfd_level_2():
-    w, h = 1350, 880
+    w, h = 1500, 920
     b = DrawioBuilder("05_DFD_Level_2_Stress_Detection", w, h)
 
     svg = [
@@ -571,77 +583,77 @@ def build_dfd_level_2():
         svg.append(f'<text x="{cx}" y="{cy+6}" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#0f172a" text-anchor="middle">{title1}</text>')
         svg.append(f'<text x="{cx}" y="{cy+19}" font-family="Arial, sans-serif" font-size="9" fill="#0f172a" text-anchor="middle">{title2}</text>')
 
-    # 3 Inputs on Left
+    # 3 Inputs on Left (width 230, height 56)
     in_w, in_h = 230, 56
     svg.extend([
-        f'<rect x="50" y="180" width="{in_w}" height="{in_h}" fill="#f8fafc" stroke="#0f172a" stroke-width="1.8"/>',
-        f'<text x="{50+in_w/2}" y="206" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Questionnaire Assessment</text>',
-        f'<text x="{50+in_w/2}" y="222" font-family="Arial, sans-serif" font-size="9.5" fill="#475569" text-anchor="middle">PSS-10 / DASS-21 Score</text>',
+        f'<rect x="60" y="180" width="{in_w}" height="{in_h}" fill="#f8fafc" stroke="#0f172a" stroke-width="1.8"/>',
+        f'<text x="{60+in_w/2}" y="206" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Questionnaire Assessment</text>',
+        f'<text x="{60+in_w/2}" y="222" font-family="Arial, sans-serif" font-size="9.5" fill="#475569" text-anchor="middle">PSS-10 / DASS-21 Score</text>',
 
-        f'<rect x="50" y="370" width="{in_w}" height="{in_h}" fill="#f8fafc" stroke="#0f172a" stroke-width="1.8"/>',
-        f'<text x="{50+in_w/2}" y="396" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Daily Voice &amp; Text Diary</text>',
-        f'<text x="{50+in_w/2}" y="412" font-family="Arial, sans-serif" font-size="9.5" fill="#475569" text-anchor="middle">Whisper STT &amp; Sentiment</text>',
+        f'<rect x="60" y="372" width="{in_w}" height="{in_h}" fill="#f8fafc" stroke="#0f172a" stroke-width="1.8"/>',
+        f'<text x="{60+in_w/2}" y="398" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Daily Voice &amp; Text Diary</text>',
+        f'<text x="{60+in_w/2}" y="414" font-family="Arial, sans-serif" font-size="9.5" fill="#475569" text-anchor="middle">Whisper STT &amp; Sentiment</text>',
 
-        f'<rect x="50" y="560" width="{in_w}" height="{in_h}" fill="#f8fafc" stroke="#0f172a" stroke-width="1.8"/>',
-        f'<text x="{50+in_w/2}" y="586" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Habit Tracker Logs</text>',
-        f'<text x="{50+in_w/2}" y="602" font-family="Arial, sans-serif" font-size="9.5" fill="#475569" text-anchor="middle">Sleep, Screen Time, Steps</text>',
+        f'<rect x="60" y="560" width="{in_w}" height="{in_h}" fill="#f8fafc" stroke="#0f172a" stroke-width="1.8"/>',
+        f'<text x="{60+in_w/2}" y="586" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Habit Tracker Logs</text>',
+        f'<text x="{60+in_w/2}" y="602" font-family="Arial, sans-serif" font-size="9.5" fill="#475569" text-anchor="middle">Sleep, Screen Time, Steps</text>',
     ])
 
-    # 6 Processes
-    draw_proc("4.1", "Feature Ingestion &amp;", "Imputation Engine", 360, 400)
-    draw_proc("4.2", "Multimodal Fusion", "BiLSTM Classifier", 640, 400)
-    draw_proc("4.3", "Baseline Comparator", "&amp; Trigger Drift", 910, 200)
-    draw_proc("4.4", "Compute SHAP", "Attribution Values", 910, 400)
-    draw_proc("4.5", "Crisis Evaluation &amp;", "SOS Safety Triage", 910, 600)
-    draw_proc("4.6", "Recommendation &amp;", "Recovery Router", 1160, 400)
+    # 6 Processes with generous runway (cx=460, 740, 1020, 1300)
+    draw_proc("4.1", "Feature Ingestion &amp;", "Imputation Engine", 460, 400)
+    draw_proc("4.2", "Multimodal Fusion", "BiLSTM Classifier", 740, 400)
+    draw_proc("4.3", "Baseline Comparator", "&amp; Trigger Drift", 1020, 200)
+    draw_proc("4.4", "Compute SHAP", "Attribution Values", 1020, 400)
+    draw_proc("4.5", "Crisis Evaluation &amp;", "SOS Safety Triage", 1020, 600)
+    draw_proc("4.6", "Recommendation &amp;", "Recovery Router", 1300, 400)
 
     # Store D2
     svg.extend([
-        '<line x1="820" y1="90" x2="1000" y2="90" stroke="#0f172a" stroke-width="1.8"/>',
-        '<line x1="820" y1="122" x2="1000" y2="122" stroke="#0f172a" stroke-width="1.8"/>',
-        '<line x1="820" y1="90" x2="820" y2="122" stroke="#0f172a" stroke-width="1.8"/>',
-        '<line x1="856" y1="90" x2="856" y2="122" stroke="#0f172a" stroke-width="1"/>',
-        '<rect x="821" y="91" width="34" height="30" fill="#f1f5f9"/>',
-        '<text x="838" y="111" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e3a8a" text-anchor="middle">D2</text>',
-        '<text x="864" y="111" font-family="Arial, sans-serif" font-size="9.5" font-weight="600" fill="#0f172a">Student Baseline Store</text>',
+        '<line x1="930" y1="90" x2="1110" y2="90" stroke="#0f172a" stroke-width="1.8"/>',
+        '<line x1="930" y1="122" x2="1110" y2="122" stroke="#0f172a" stroke-width="1.8"/>',
+        '<line x1="930" y1="90" x2="930" y2="122" stroke="#0f172a" stroke-width="1.8"/>',
+        '<line x1="966" y1="90" x2="966" y2="122" stroke="#0f172a" stroke-width="1"/>',
+        '<rect x="931" y="91" width="34" height="30" fill="#f1f5f9"/>',
+        '<text x="948" y="111" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e3a8a" text-anchor="middle">D2</text>',
+        '<text x="974" y="111" font-family="Arial, sans-serif" font-size="9.5" font-weight="600" fill="#0f172a">Student Baseline Store</text>',
     ])
 
     # Output Block
     out_w, out_h = 240, 65
     svg.extend([
-        f'<rect x="1040" y="650" width="{out_w}" height="{out_h}" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>',
-        f'<text x="{1040+out_w/2}" y="678" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">Student Mobile Dashboard</text>',
-        f'<text x="{1040+out_w/2}" y="698" font-family="Arial, sans-serif" font-size="9.5" fill="#475569" text-anchor="middle">Stress Level, XAI Drivers, Plan</text>',
+        f'<rect x="1180" y="650" width="{out_w}" height="{out_h}" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>',
+        f'<text x="{1180+out_w/2}" y="678" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">Student Mobile Dashboard</text>',
+        f'<text x="{1180+out_w/2}" y="698" font-family="Arial, sans-serif" font-size="9.5" fill="#475569" text-anchor="middle">Stress Level, XAI Drivers, Plan</text>',
     ])
 
     def add_clean_flow(path_d, label, tx, ty, anchor="middle"):
         svg.append(f'<path d="{path_d}" fill="none" stroke="#1e3a8a" stroke-width="1.4" marker-end="url(#arrow)"/>')
         svg.append(f'<text x="{tx}" y="{ty}" font-family="Arial, sans-serif" font-size="9" font-weight="600" fill="#1e3a8a" text-anchor="{anchor}">{label}</text>')
 
-    # 3 Inputs to 4.1
-    add_clean_flow("M 280 208 L 360 208 L 360 352", "Raw PSS Score", 320, 198)
-    add_clean_flow("M 280 400 L 312 400", "Audio/Text Sentiment", 296, 390)
-    add_clean_flow("M 280 588 L 360 588 L 360 448", "Habit Metrics Vector", 320, 600)
+    # 3 Inputs to 4.1 (Clean 122px runway)
+    add_clean_flow("M 290 208 L 460 208 L 460 352", "Raw PSS Score", 375, 198)
+    add_clean_flow("M 290 400 L 412 400", "Audio/Text Sentiment", 351, 390)
+    add_clean_flow("M 290 588 L 460 588 L 460 448", "Habit Metrics Vector", 375, 600)
 
-    # 4.1 to 4.2
-    add_clean_flow("M 408 400 L 592 400", "Normalized Multi-Feature Vector", 500, 390)
+    # 4.1 to 4.2 (184px runway)
+    add_clean_flow("M 508 400 L 692 400", "Normalized Multi-Feature Vector", 600, 390)
 
-    # 4.2 to 4.3, 4.4, 4.5
-    add_clean_flow("M 640 352 L 640 200 L 862 200", "Estimated Stress Level", 750, 190)
-    add_clean_flow("M 688 400 L 862 400", "Model Weights &amp; Prediction", 775, 390)
-    add_clean_flow("M 640 448 L 640 600 L 862 600", "High Risk / Acute Flags", 750, 612)
+    # 4.2 to 4.3, 4.4, 4.5 (184px runway)
+    add_clean_flow("M 740 352 L 740 200 L 972 200", "Estimated Stress Level", 856, 190)
+    add_clean_flow("M 788 400 L 972 400", "Model Weights &amp; Prediction", 880, 390)
+    add_clean_flow("M 740 448 L 740 600 L 972 600", "High Risk / Acute Flags", 856, 612)
 
     # D2 Store <-> 4.3
-    svg.append('<line x1="910" y1="122" x2="910" y2="152" stroke="#1e3a8a" stroke-width="1.4" marker-end="url(#arrow)"/>')
-    svg.append('<text x="918" y="140" font-family="Arial, sans-serif" font-size="8.5" font-weight="600" fill="#1e3a8a">Update Baseline</text>')
+    svg.append('<line x1="1020" y1="122" x2="1020" y2="152" stroke="#1e3a8a" stroke-width="1.4" marker-end="url(#arrow)"/>')
+    svg.append('<text x="1030" y="140" font-family="Arial, sans-serif" font-size="8.5" font-weight="600" fill="#1e3a8a">Update Baseline</text>')
 
-    # 4.3, 4.4, 4.5 to 4.6
-    add_clean_flow("M 958 200 L 1080 200 L 1080 375 L 1112 375", "Baseline Deviation", 1020, 190)
-    add_clean_flow("M 958 400 L 1112 400", "SHAP Factor Attribution", 1035, 390)
-    add_clean_flow("M 958 600 L 1080 600 L 1080 425 L 1112 425", "Safety Status / Helpline", 1020, 615)
+    # 4.3, 4.4, 4.5 to 4.6 (184px runway)
+    add_clean_flow("M 1068 200 L 1200 200 L 1200 375 L 1252 375", "Baseline Deviation", 1134, 190)
+    add_clean_flow("M 1068 400 L 1252 400", "SHAP Factor Attribution", 1160, 390)
+    add_clean_flow("M 1068 600 L 1200 600 L 1200 425 L 1252 425", "Safety Status / Helpline", 1134, 615)
 
     # 4.6 to Dashboard
-    add_clean_flow("M 1160 448 L 1160 650", "Dispatched Plan &amp; Insights", 1168, 550, "start")
+    add_clean_flow("M 1300 448 L 1300 650", "Dispatched Plan &amp; Insights", 1312, 550, "start")
 
     svg.append('</svg>')
     save_and_render("05_DFD_Level_2_Stress_Detection", "\n".join(svg), b.to_xml())
@@ -885,8 +897,10 @@ def build_class_diagram():
     svg.append('<line x1="1080" y1="365" x2="1080" y2="460" stroke="#0f172a" stroke-width="1.4"/>')
     svg.append('<text x="1095" y="410" font-family="Arial, sans-serif" font-size="9" font-weight="bold">1..*</text>')
 
-    svg.append('<line x1="460" y1="310" x2="960" y2="510" stroke="#0f172a" stroke-width="1.4"/>')
-    svg.append('<text x="510" y="325" font-family="Arial, sans-serif" font-size="9" font-weight="bold">1..*</text>')
+    # Orthogonal StudentProfile -> Appointment (avoids DailyHabit)
+    svg.append('<path d="M 460 270 L 890 270 L 890 480 L 960 480" fill="none" stroke="#0f172a" stroke-width="1.4"/>')
+    svg.append('<text x="475" y="262" font-family="Arial, sans-serif" font-size="9" font-weight="bold">1..*</text>')
+    svg.append('<text x="945" y="472" font-family="Arial, sans-serif" font-size="9" font-weight="bold" text-anchor="end">0..*</text>')
 
     svg.append('<line x1="1080" y1="610" x2="1080" y2="700" stroke="#0f172a" stroke-width="1.4"/>')
     svg.append('<text x="1095" y="655" font-family="Arial, sans-serif" font-size="9" font-weight="bold">1..1</text>')
@@ -971,7 +985,15 @@ def build_erd_diagram():
     draw_crows_foot(340, 370, 425, 440, "1 : N")
     draw_crows_foot(420, 370, 650, 440, "1 : N")
     draw_crows_foot(165, 600, 165, 710, "1 : 1")
-    draw_crows_foot(380, 370, 520, 710, "1 : N")
+    
+    # Orthogonal STUDENT_PROFILES -> ADAPTIVE_STUDY_PLANS via corridor (avoids VOICE_DIARIES)
+    svg.append('<path d="M 460 320 L 555 320 L 555 710" fill="none" stroke="#0f172a" stroke-width="1.6"/>')
+    svg.append('<line x1="465" y1="315" x2="465" y2="325" stroke="#0f172a" stroke-width="1.6"/>')
+    svg.append('<line x1="469" y1="315" x2="469" y2="325" stroke="#0f172a" stroke-width="1.6"/>')
+    svg.append('<line x1="555" y1="710" x2="549" y2="700" stroke="#0f172a" stroke-width="1.6"/>')
+    svg.append('<line x1="555" y1="710" x2="561" y2="700" stroke="#0f172a" stroke-width="1.6"/>')
+    svg.append('<text x="565" y="520" font-family="Arial, sans-serif" font-size="8.5" font-weight="bold" fill="#1e3a8a">1 : N</text>')
+
     draw_crows_foot(1120, 380, 1120, 470, "1 : N")
     draw_crows_foot(1120, 640, 1120, 720, "1 : 1")
 
@@ -1117,7 +1139,12 @@ def build_database_schema():
     draw_fk_link(340, 360, 430, 440)
     draw_fk_link(420, 360, 650, 440)
     draw_fk_link(170, 590, 170, 710)
-    draw_fk_link(390, 360, 520, 710)
+    
+    # Orthogonal student_profiles -> study_plans via corridor (avoids voice_diaries)
+    svg.append('<path d="M 460 310 L 555 310 L 555 710" fill="none" stroke="#0284c7" stroke-width="1.4" stroke-dasharray="4,4"/>')
+    svg.append('<circle cx="460" cy="310" r="3" fill="#0284c7"/>')
+    svg.append('<circle cx="555" cy="710" r="3" fill="#0284c7"/>')
+
     draw_fk_link(1125, 360, 1125, 470)
     draw_fk_link(1125, 620, 1125, 720)
 

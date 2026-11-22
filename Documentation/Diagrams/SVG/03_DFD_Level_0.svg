@@ -1,45 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="920" viewBox="0 0 1400 920">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="950" viewBox="0 0 1600 950">
 <defs>
   <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
     <path d="M 0 0 L 10 5 L 0 10 z" fill="#1e3a8a"/>
   </marker>
 </defs>
-<rect width="1400" height="920" fill="#ffffff"/>
-<text x="700.0" y="36" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle">Figure 5.3.1: DFD Level 0 (Context Diagram) for MindEase System</text>
-<line x1="50" y1="50" x2="1350" y2="50" stroke="#d1d5db" stroke-width="1"/>
-<rect x="25" y="65" width="1350" height="835" fill="none" stroke="#64748b" stroke-width="1.2"/>
-<circle cx="700" cy="460" r="140" fill="#ffffff" stroke="#1e3a8a" stroke-width="2.5"/>
-<line x1="565" y1="410" x2="835" y2="410" stroke="#1e3a8a" stroke-width="1.5"/>
-<text x="700" y="385" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e3a8a" text-anchor="middle">0.0</text>
-<text x="700" y="445" font-family="Arial, sans-serif" font-size="13.5" font-weight="bold" fill="#0f172a" text-anchor="middle">MindEase AI Stress Detection,</text>
-<text x="700" y="468" font-family="Arial, sans-serif" font-size="13.5" font-weight="bold" fill="#0f172a" text-anchor="middle">Recovery &amp; Support</text>
-<text x="700" y="491" font-family="Arial, sans-serif" font-size="13.5" font-weight="bold" fill="#0f172a" text-anchor="middle">System</text>
-<rect x="60" y="140" width="240" height="80" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>
-<text x="180.0" y="174" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Student</text>
-<text x="180.0" y="194" font-family="Arial, sans-serif" font-size="11.5" fill="#475569" text-anchor="middle">(Primary User)</text>
-<rect x="60" y="700" width="240" height="80" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>
-<text x="180.0" y="734" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Polar Gateway</text>
-<text x="180.0" y="754" font-family="Arial, sans-serif" font-size="11.5" fill="#475569" text-anchor="middle">(External Payment Service)</text>
-<rect x="1100" y="140" width="240" height="80" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>
-<text x="1220.0" y="174" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Counselor</text>
-<text x="1220.0" y="194" font-family="Arial, sans-serif" font-size="11.5" fill="#475569" text-anchor="middle">(Mental Health Professional)</text>
-<rect x="1100" y="700" width="240" height="80" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>
-<text x="1220.0" y="734" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Administrator</text>
-<text x="1220.0" y="754" font-family="Arial, sans-serif" font-size="11.5" fill="#475569" text-anchor="middle">(System Admin)</text>
-<path d="M 300 160 L 610 160 L 610 338" fill="none" stroke="#1e3a8a" stroke-width="1.6" marker-end="url(#arrow)"/>
-<text x="455" y="150" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#1e3a8a" text-anchor="middle">Questionnaire Responses, Voice Diary, Habit Logs (Sleep, Steps)</text>
-<path d="M 575 390 L 575 200 L 300 200" fill="none" stroke="#1e3a8a" stroke-width="1.6" marker-end="url(#arrow)"/>
-<text x="455" y="192" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#1e3a8a" text-anchor="middle">Stress Level (L/M/H), XAI Insights, Adaptive Study Plan, Relaxation Audio</text>
-<path d="M 1100 160 L 790 160 L 790 338" fill="none" stroke="#1e3a8a" stroke-width="1.6" marker-end="url(#arrow)"/>
-<text x="945" y="150" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#1e3a8a" text-anchor="middle">Availability Slots, Clinical Assessment Notes</text>
-<path d="M 825 390 L 825 200 L 1100 200" fill="none" stroke="#1e3a8a" stroke-width="1.6" marker-end="url(#arrow)"/>
-<text x="945" y="192" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#1e3a8a" text-anchor="middle">Appointment Booking Requests, Consented Student Dossiers</text>
-<path d="M 575 530 L 575 720 L 300 720" fill="none" stroke="#1e3a8a" stroke-width="1.6" marker-end="url(#arrow)"/>
-<text x="440" y="712" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#1e3a8a" text-anchor="middle">Checkout Session Token &amp; Booking Reference Request</text>
-<path d="M 300 760 L 610 760 L 610 582" fill="none" stroke="#1e3a8a" stroke-width="1.6" marker-end="url(#arrow)"/>
-<text x="455" y="752" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#1e3a8a" text-anchor="middle">Webhook Payment Confirmation Token (Success / Decline)</text>
-<path d="M 825 530 L 825 720 L 1100 720" fill="none" stroke="#1e3a8a" stroke-width="1.6" marker-end="url(#arrow)"/>
-<text x="960" y="712" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#1e3a8a" text-anchor="middle">Reported Community Post Queue, Audit Telemetry Logs</text>
-<path d="M 1100 760 L 790 760 L 790 582" fill="none" stroke="#1e3a8a" stroke-width="1.6" marker-end="url(#arrow)"/>
-<text x="945" y="752" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#1e3a8a" text-anchor="middle">Moderation Actions, Content Updates, Counselor Approvals</text>
+<rect width="1600" height="950" fill="#ffffff"/>
+<text x="800.0" y="36" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle">Figure 5.3.1: DFD Level 0 (Context Diagram) for MindEase System</text>
+<line x1="50" y1="50" x2="1550" y2="50" stroke="#d1d5db" stroke-width="1"/>
+<rect x="25" y="65" width="1550" height="865" fill="none" stroke="#64748b" stroke-width="1.2"/>
+<circle cx="800" cy="475" r="145" fill="#ffffff" stroke="#1e3a8a" stroke-width="2.5"/>
+<line x1="660" y1="425" x2="940" y2="425" stroke="#1e3a8a" stroke-width="1.5"/>
+<text x="800" y="400" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e3a8a" text-anchor="middle">0.0</text>
+<text x="800" y="455" font-family="Arial, sans-serif" font-size="13.5" font-weight="bold" fill="#0f172a" text-anchor="middle">MindEase AI Stress Detection,</text>
+<text x="800" y="480" font-family="Arial, sans-serif" font-size="13.5" font-weight="bold" fill="#0f172a" text-anchor="middle">Recovery &amp; Support Platform</text>
+<text x="800" y="505" font-family="Arial, sans-serif" font-size="11" font-style="italic" fill="#475569" text-anchor="middle">(Core System Boundary)</text>
+<rect x="80" y="140" width="260" height="84" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>
+<text x="210.0" y="176" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Student</text>
+<text x="210.0" y="198" font-family="Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">(Primary User)</text>
+<rect x="80" y="720" width="260" height="84" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>
+<text x="210.0" y="756" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Polar Gateway</text>
+<text x="210.0" y="778" font-family="Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">(External Payment Service)</text>
+<rect x="1260" y="140" width="260" height="84" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>
+<text x="1390.0" y="176" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Counselor</text>
+<text x="1390.0" y="198" font-family="Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">(Mental Health Professional)</text>
+<rect x="1260" y="720" width="260" height="84" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>
+<text x="1390.0" y="756" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">Administrator</text>
+<text x="1390.0" y="778" font-family="Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">(System Admin)</text>
+<path d="M 340 160 L 690 160 L 690 345" fill="none" stroke="#1e3a8a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="515" y="138" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e3a8a" text-anchor="middle">Questionnaire Responses, Voice Diary &amp; Habit Logs</text>
+<text x="515" y="152" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">(Sleep Duration, Daily Step Count, Screen Time)</text>
+<path d="M 655 420 L 655 205 L 340 205" fill="none" stroke="#1e3a8a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="495" y="185" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e3a8a" text-anchor="middle">Stress Level (L/M/H), SHAP XAI Insights &amp; Study Plans</text>
+<text x="495" y="199" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">(Pomodoro Intervals, Audio Exercises, Support Bot)</text>
+<path d="M 1260 160 L 910 160 L 910 345" fill="none" stroke="#1e3a8a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="1085" y="138" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e3a8a" text-anchor="middle">Counselor Availability Slots &amp; Clinical Notes</text>
+<text x="1085" y="152" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">(Scheduled Office Hours, Student Progress Notes)</text>
+<path d="M 945 420 L 945 205 L 1260 205" fill="none" stroke="#1e3a8a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="1105" y="185" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e3a8a" text-anchor="middle">Confirmed Appointment Requests &amp; Patient Dossiers</text>
+<text x="1105" y="199" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">(Consented Longitudinal Stress Trends &amp; Baseline)</text>
+<path d="M 655 530 L 655 745 L 340 745" fill="none" stroke="#1e3a8a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="495" y="725" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e3a8a" text-anchor="middle">Checkout Session Creation &amp; Payment Intent</text>
+<text x="495" y="739" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">(Booking Reference, Appointment Fee in USD/PKR)</text>
+<path d="M 340 790 L 690 790 L 690 605" fill="none" stroke="#1e3a8a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="515" y="810" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e3a8a" text-anchor="middle">Polar Webhook Payment Notification Token</text>
+<text x="515" y="824" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">(Signature Verification, Payment Status: Success/Fail)</text>
+<path d="M 945 530 L 945 745 L 1260 745" fill="none" stroke="#1e3a8a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="1105" y="725" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e3a8a" text-anchor="middle">Reported Posts Queue &amp; System Telemetry Logs</text>
+<text x="1105" y="739" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">(Audit Logs, AI Pipeline Health, Error Telemetry)</text>
+<path d="M 1260 790 L 910 790 L 910 605" fill="none" stroke="#1e3a8a" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="1085" y="810" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e3a8a" text-anchor="middle">Moderation Actions &amp; System Configuration</text>
+<text x="1085" y="824" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">(Counselor Verification, Content Deletion, Auth Roles)</text>
 </svg>

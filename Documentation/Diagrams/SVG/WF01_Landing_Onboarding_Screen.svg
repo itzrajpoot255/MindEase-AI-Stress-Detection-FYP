@@ -14,34 +14,50 @@
 
 <!-- Screen Content -->
 
-<!-- Header Logo -->
-<circle cx="210" cy="140" r="35" fill="#eff6ff" stroke="#1e3a8a" stroke-width="2"/>
-<text x="210" y="148" font-family="Arial, sans-serif" font-size="28" fill="#1e3a8a" text-anchor="middle">🧠</text>
-<text x="210" y="205" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">MindEase</text>
-<text x="210" y="228" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">AI Stress Detection &amp; Academic Support</text>
+<!-- MindEase Vector Logo: Stylized Neural Brain & Wellness Nodes -->
+<g transform="translate(175, 88)">
+  <circle cx="35" cy="35" r="34" fill="#eff6ff" stroke="#1e3a8a" stroke-width="2.5"/>
+  <!-- Stylized Brain Contour -->
+  <path d="M 22 23 C 15 23 13 30 17 36 C 13 40 15 48 21 48 C 23 52 32 52 35 47 C 38 52 47 52 49 48 C 55 48 57 40 53 36 C 57 30 55 23 48 23 C 44 18 26 18 22 23 Z" fill="#1e3a8a"/>
+  <!-- Neural Inner Pathways -->
+  <path d="M 35 24 L 35 44 M 27 30 L 35 34 M 43 30 L 35 34 M 26 41 L 35 43 M 44 41 L 35 43" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="27" cy="30" r="2.2" fill="#38bdf8"/>
+  <circle cx="43" cy="30" r="2.2" fill="#38bdf8"/>
+  <circle cx="35" cy="34" r="2.5" fill="#ffffff"/>
+</g>
+
+<text x="210" y="192" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#0f172a" text-anchor="middle">MindEase</text>
+<text x="210" y="212" font-family="Arial, sans-serif" font-size="11.5" fill="#475569" text-anchor="middle">AI Stress Detection &amp; Academic Support</text>
+<text x="210" y="228" font-family="Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#0284c7" text-anchor="middle">COMSATS University Islamabad (CUI)</text>
 
 <!-- Language Selection Card -->
-<rect x="55" y="270" width="310" height="150" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
-<text x="75" y="298" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a">Choose Language / زبان منتخب کریں</text>
+<rect x="55" y="250" width="310" height="165" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="75" y="276" font-family="Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#0f172a">Choose App Language / Zaban Ka Intekhab</text>
+<text x="75" y="292" font-family="Arial, sans-serif" font-size="9.5" fill="#64748b">Select your preferred interaction language:</text>
 
-<rect x="75" y="315" width="80" height="35" rx="6" fill="#1e3a8a"/>
-<text x="115" y="337" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">English</text>
+<!-- Language Pills -->
+<rect x="75" y="306" width="80" height="34" rx="6" fill="#1e3a8a"/>
+<text x="115" y="327" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#ffffff" text-anchor="middle">English</text>
 
-<rect x="170" y="315" width="80" height="35" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
-<text x="210" y="337" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">اردو (Urdu)</text>
+<rect x="165" y="306" width="90" height="34" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="210" y="327" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a" text-anchor="middle">Urdu (Nastaliq)</text>
 
-<rect x="265" y="315" width="85" height="35" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
-<text x="307" y="337" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Roman Urdu</text>
+<rect x="265" y="306" width="85" height="34" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="307" y="327" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#0f172a" text-anchor="middle">Roman Urdu</text>
 
-<text x="75" y="380" font-family="Arial, sans-serif" font-size="10" fill="#64748b">• Standardized Perceived Stress Scale (PSS)</text>
-<text x="75" y="400" font-family="Arial, sans-serif" font-size="10" fill="#64748b">• Voice Reflections via Whisper Speech ASR</text>
+<!-- Core Features Bullets -->
+<text x="75" y="362" font-family="Arial, sans-serif" font-size="9.5" fill="#334155">✓ Standardized PSS-10 Multilingual Assessment</text>
+<text x="75" y="380" font-family="Arial, sans-serif" font-size="9.5" fill="#334155">✓ Daily Voice Diary via Whisper Speech-to-Text</text>
+<text x="75" y="398" font-family="Arial, sans-serif" font-size="9.5" fill="#334155">✓ Explainable AI (SHAP) Insights &amp; Study Plans</text>
 
 <!-- Action Buttons -->
-<rect x="55" y="480" width="310" height="48" rx="8" fill="#1e3a8a"/>
-<text x="210" y="510" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">Get Started (Student / Counselor)</text>
+<rect x="55" y="475" width="310" height="48" rx="8" fill="#1e3a8a"/>
+<text x="210" y="504" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">Get Started (Student / Counselor) →</text>
 
-<rect x="55" y="545" width="310" height="48" rx="8" fill="#ffffff" stroke="#1e3a8a" stroke-width="1.5"/>
-<text x="210" y="575" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1e3a8a" text-anchor="middle">Sign In to Existing Account</text>
+<rect x="55" y="535" width="310" height="48" rx="8" fill="#ffffff" stroke="#1e3a8a" stroke-width="1.6"/>
+<text x="210" y="564" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1e3a8a" text-anchor="middle">Sign In to Existing Account</text>
+
+<text x="210" y="618" font-family="Arial, sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">🔒 100% Confidential • End-to-End Encrypted</text>
 
 
 <!-- Home Navigation Bar Indicator -->

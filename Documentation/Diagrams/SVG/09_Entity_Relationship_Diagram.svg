@@ -161,12 +161,12 @@
 <line x1="165" y1="710" x2="155" y2="704" stroke="#0f172a" stroke-width="1.6"/>
 <line x1="165" y1="710" x2="155" y2="716" stroke="#0f172a" stroke-width="1.6"/>
 <text x="165.0" y="649.0" font-family="Arial, sans-serif" font-size="8.5" font-weight="bold" fill="#1e3a8a">1 : 1</text>
-<path d="M 380 370 L 520 710" fill="none" stroke="#0f172a" stroke-width="1.6"/>
-<line x1="375" y1="365" x2="375" y2="375" stroke="#0f172a" stroke-width="1.6"/>
-<line x1="371" y1="365" x2="371" y2="375" stroke="#0f172a" stroke-width="1.6"/>
-<line x1="520" y1="710" x2="510" y2="704" stroke="#0f172a" stroke-width="1.6"/>
-<line x1="520" y1="710" x2="510" y2="716" stroke="#0f172a" stroke-width="1.6"/>
-<text x="450.0" y="534.0" font-family="Arial, sans-serif" font-size="8.5" font-weight="bold" fill="#1e3a8a">1 : N</text>
+<path d="M 460 320 L 555 320 L 555 710" fill="none" stroke="#0f172a" stroke-width="1.6"/>
+<line x1="465" y1="315" x2="465" y2="325" stroke="#0f172a" stroke-width="1.6"/>
+<line x1="469" y1="315" x2="469" y2="325" stroke="#0f172a" stroke-width="1.6"/>
+<line x1="555" y1="710" x2="549" y2="700" stroke="#0f172a" stroke-width="1.6"/>
+<line x1="555" y1="710" x2="561" y2="700" stroke="#0f172a" stroke-width="1.6"/>
+<text x="565" y="520" font-family="Arial, sans-serif" font-size="8.5" font-weight="bold" fill="#1e3a8a">1 : N</text>
 <path d="M 1120 380 L 1120 470" fill="none" stroke="#0f172a" stroke-width="1.6"/>
 <line x1="1115" y1="375" x2="1115" y2="385" stroke="#0f172a" stroke-width="1.6"/>
 <line x1="1111" y1="375" x2="1111" y2="385" stroke="#0f172a" stroke-width="1.6"/>
