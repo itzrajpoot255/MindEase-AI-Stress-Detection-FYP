@@ -520,13 +520,15 @@ def get_sequence_diagram_definitions():
     return diagrams
 
 def generate_all_sequence_diagrams():
+    import pymupdf
     diagrams = get_sequence_diagram_definitions()
     svg_dir = os.path.join("Documentation", "Diagrams", "SVG")
     editable_dir = os.path.join("Documentation", "Diagrams", "Editable")
     visio_dir = os.path.join("Documentation", "Diagrams", "Visio")
-    os.makedirs(svg_dir, exist_ok=True)
-    os.makedirs(editable_dir, exist_ok=True)
-    os.makedirs(visio_dir, exist_ok=True)
+    png_dir = os.path.join("Documentation", "Diagrams", "PNG")
+    pdf_dir = os.path.join("Documentation", "Diagrams", "PDF")
+    for d in [svg_dir, editable_dir, visio_dir, png_dir, pdf_dir]:
+        os.makedirs(d, exist_ok=True)
 
     print(f"Total Sequence Diagrams to generate: {len(diagrams)}")
     generated = []
@@ -537,9 +539,7 @@ def generate_all_sequence_diagrams():
             title=d["title"],
             figure_caption=d["caption"],
             participants=d["participants"],
-            steps=d["steps"],
-            width=1050,
-            height=850
+            steps=d["steps"]
         )
         
         # SVG
@@ -559,8 +559,20 @@ def generate_all_sequence_diagrams():
         with open(visio_path, "w", encoding="utf-8") as f:
             f.write(drawio_content)
 
+        # 300 DPI PNG and PDF
+        png_path = os.path.join(png_dir, f"{uid}_Sequence_Diagram.png")
+        pdf_path = os.path.join(pdf_dir, f"{uid}_Sequence_Diagram.pdf")
+        doc = pymupdf.open("svg", svg_content.encode("utf-8"))
+        pdf_bytes = doc.convert_to_pdf()
+        doc_pdf = pymupdf.open("pdf", pdf_bytes)
+        doc_pdf.save(pdf_path)
+        pix = doc_pdf[0].get_pixmap(dpi=300)
+        pix.save(png_path)
+        doc_pdf.close()
+        doc.close()
+
         generated.append((uid, d["title"], d["caption"], svg_path, drawio_path))
-        print(f"Generated: {uid}_Sequence_Diagram (.svg, .drawio)")
+        print(f"Generated: {uid}_Sequence_Diagram (PNG: {pix.width}x{pix.height}, PDF, SVG, Draw.io)")
 
     return generated
 

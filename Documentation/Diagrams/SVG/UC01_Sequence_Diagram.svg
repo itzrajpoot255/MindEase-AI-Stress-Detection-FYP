@@ -1,80 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="850" viewBox="0 0 1050 850">
+<svg xmlns="http://www.w3.org/2000/svg" width="1350" height="900" viewBox="0 0 1350 900">
 <defs>
-<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#0f172a"/></marker>
-<marker id="async" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10" fill="none" stroke="#0f172a" stroke-width="1.5"/></marker>
-<marker id="return-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10" fill="none" stroke="#334155" stroke-width="1.5"/></marker>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f172a"/>
+  </marker>
+  <marker id="return-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+    <path d="M 0 1 L 8 5 L 0 9" fill="none" stroke="#475569" stroke-width="1.5"/>
+  </marker>
 </defs>
-<rect width="1050" height="850" fill="#ffffff"/>
-<rect x="40" y="30" width="970" height="760" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-<path d="M 40 30 L 327.5 30 L 327.5 52 L 315.5 62 L 40 62 Z" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
-<text x="50" y="50" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a">sd UC01: Register & Create Profile</text>
-<line x1="110.0" y1="135" x2="110.0" y2="720" stroke="#64748b" stroke-width="1.2" stroke-dasharray="5,5"/>
-<circle cx="110.0" cy="100" r="8" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
-<line x1="110.0" y1="108" x2="110.0" y2="124" stroke="#0f172a" stroke-width="1.5"/>
-<line x1="98.0" y1="114" x2="122.0" y2="114" stroke="#0f172a" stroke-width="1.5"/>
-<line x1="110.0" y1="124" x2="100.0" y2="138" stroke="#0f172a" stroke-width="1.5"/>
-<line x1="110.0" y1="124" x2="120.0" y2="138" stroke="#0f172a" stroke-width="1.5"/>
-<text x="110.0" y="82" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Student / Counselor</text>
-<circle cx="110.0" cy="730" r="8" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
-<line x1="110.0" y1="738" x2="110.0" y2="754" stroke="#0f172a" stroke-width="1.5"/>
-<line x1="98.0" y1="744" x2="122.0" y2="744" stroke="#0f172a" stroke-width="1.5"/>
-<line x1="110.0" y1="754" x2="100.0" y2="768" stroke="#0f172a" stroke-width="1.5"/>
-<line x1="110.0" y1="754" x2="120.0" y2="768" stroke="#0f172a" stroke-width="1.5"/>
-<text x="110.0" y="774" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Student / Counselor</text>
-<line x1="317.5" y1="125" x2="317.5" y2="720" stroke="#64748b" stroke-width="1.2" stroke-dasharray="5,5"/>
-<rect x="262.5" y="90" width="110" height="32" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5" rx="3"/>
-<text x="317.5" y="110" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">AuthUI</text>
-<rect x="262.5" y="720" width="110" height="32" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5" rx="3"/>
-<text x="317.5" y="740" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">AuthUI</text>
-<line x1="525.0" y1="125" x2="525.0" y2="720" stroke="#64748b" stroke-width="1.2" stroke-dasharray="5,5"/>
-<rect x="470.0" y="90" width="110" height="32" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5" rx="3"/>
-<text x="525.0" y="110" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">AuthController</text>
-<rect x="470.0" y="720" width="110" height="32" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5" rx="3"/>
-<text x="525.0" y="740" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">AuthController</text>
-<line x1="732.5" y1="125" x2="732.5" y2="720" stroke="#64748b" stroke-width="1.2" stroke-dasharray="5,5"/>
-<rect x="677.5" y="90" width="110" height="32" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5" rx="3"/>
-<text x="732.5" y="110" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">SupabaseAuth</text>
-<rect x="677.5" y="720" width="110" height="32" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5" rx="3"/>
-<text x="732.5" y="740" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">SupabaseAuth</text>
-<line x1="940.0" y1="125" x2="940.0" y2="720" stroke="#64748b" stroke-width="1.2" stroke-dasharray="5,5"/>
-<rect x="885.0" y="90" width="110" height="32" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5" rx="3"/>
-<text x="940.0" y="110" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">ProfileRepository</text>
-<rect x="885.0" y="720" width="110" height="32" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5" rx="3"/>
-<text x="940.0" y="740" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">ProfileRepository</text>
-<rect x="60" y="318" width="930" height="412" fill="#fafbfc" fill-opacity="0.3" stroke="#475569" stroke-width="1.2" rx="2"/>
-<path d="M 60 318 L 110 318 L 110 334 L 102 340 L 60 340 Z" fill="#e2e8f0" stroke="#475569" stroke-width="1.2"/>
-<text x="66" y="332" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">alt</text>
-<text x="120" y="333" font-family="Arial, sans-serif" font-size="11" font-style="italic" fill="#1e293b">[valid registration data]</text>
-<line x1="60" y1="571" x2="990" y2="571" stroke="#64748b" stroke-width="1.2" stroke-dasharray="6,4"/>
-<text x="80" y="565" font-family="Arial, sans-serif" font-size="11" font-style="italic" fill="#1e293b">[email already registered or invalid fields]</text>
-<rect x="311.5" y="160" width="12" height="32" fill="#ffffff" stroke="#1e293b" stroke-width="1.2"/>
-<line x1="110.0" y1="165" x2="317.5" y2="165" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
-<text x="213.75" y="158" font-family="Arial, sans-serif" font-size="11" fill="#0f172a" text-anchor="middle">register(name, email, password, role)</text>
-<rect x="519.0" y="202" width="12" height="32" fill="#ffffff" stroke="#1e293b" stroke-width="1.2"/>
-<line x1="317.5" y1="207" x2="525.0" y2="207" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
-<text x="421.25" y="200" font-family="Arial, sans-serif" font-size="11" fill="#0f172a" text-anchor="middle">submitRegistration(userData)</text>
-<rect x="519.0" y="244" width="12" height="32" fill="#ffffff" stroke="#1e293b" stroke-width="1.2"/>
-<path d="M 531.0 249 L 553.0 249 L 553.0 267 L 531.0 267" fill="none" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
-<text x="559.0" y="261" font-family="Arial, sans-serif" font-size="11" fill="#0f172a" text-anchor="start">validateFields()</text>
-<rect x="726.5" y="286" width="12" height="32" fill="#ffffff" stroke="#1e293b" stroke-width="1.2"/>
-<line x1="525.0" y1="291" x2="732.5" y2="291" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
-<text x="628.75" y="284" font-family="Arial, sans-serif" font-size="11" fill="#0f172a" text-anchor="middle">signUp(email, password)</text>
-<line x1="732.5" y1="361" x2="525.0" y2="361" stroke="#334155" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#return-arrow)"/>
-<text x="628.75" y="354" font-family="Arial, sans-serif" font-size="11" fill="#334155" text-anchor="middle">authSuccess(userId)</text>
-<rect x="934.0" y="398" width="12" height="32" fill="#ffffff" stroke="#1e293b" stroke-width="1.2"/>
-<line x1="525.0" y1="403" x2="940.0" y2="403" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
-<text x="732.5" y="396" font-family="Arial, sans-serif" font-size="11" fill="#0f172a" text-anchor="middle">createProfile(userId, role, profileData)</text>
-<line x1="940.0" y1="445" x2="525.0" y2="445" stroke="#334155" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#return-arrow)"/>
-<text x="732.5" y="438" font-family="Arial, sans-serif" font-size="11" fill="#334155" text-anchor="middle">profileCreated()</text>
-<line x1="525.0" y1="487" x2="317.5" y2="487" stroke="#334155" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#return-arrow)"/>
-<text x="421.25" y="480" font-family="Arial, sans-serif" font-size="11" fill="#334155" text-anchor="middle">registrationPending(verifyEmail)</text>
-<line x1="317.5" y1="529" x2="110.0" y2="529" stroke="#334155" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#return-arrow)"/>
-<text x="213.75" y="522" font-family="Arial, sans-serif" font-size="11" fill="#334155" text-anchor="middle">displaySuccessPrompt()</text>
-<line x1="732.5" y1="599" x2="525.0" y2="599" stroke="#334155" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#return-arrow)"/>
-<text x="628.75" y="592" font-family="Arial, sans-serif" font-size="11" fill="#334155" text-anchor="middle">authError(duplicateEmail)</text>
-<line x1="525.0" y1="641" x2="317.5" y2="641" stroke="#334155" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#return-arrow)"/>
-<text x="421.25" y="634" font-family="Arial, sans-serif" font-size="11" fill="#334155" text-anchor="middle">registrationFailed(errorMsg)</text>
-<line x1="317.5" y1="683" x2="110.0" y2="683" stroke="#334155" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#return-arrow)"/>
-<text x="213.75" y="676" font-family="Arial, sans-serif" font-size="11" fill="#334155" text-anchor="middle">displayErrorMessage()</text>
-<text x="525.0" y="815" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">Figure 5.4.1: Sequence Diagram for Register & Create Profile</text>
+<rect width="1350" height="900" fill="#ffffff"/>
+<rect x="40" y="30" width="1270" height="815" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+<path d="M 40 30 L 324.2 30 L 324.2 54 L 312.2 64 L 40 64 Z" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+<text x="52" y="51" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a">sd UC01: Register & Create Profile</text>
+<circle cx="140.0" cy="106" r="9" fill="#ffffff" stroke="#0f172a" stroke-width="1.6"/>
+<line x1="140.0" y1="115" x2="140.0" y2="134" stroke="#0f172a" stroke-width="1.6"/>
+<line x1="125.0" y1="122" x2="155.0" y2="122" stroke="#0f172a" stroke-width="1.6"/>
+<line x1="140.0" y1="134" x2="128.0" y2="152" stroke="#0f172a" stroke-width="1.6"/>
+<line x1="140.0" y1="134" x2="152.0" y2="152" stroke="#0f172a" stroke-width="1.6"/>
+<text x="140.0" y="84" font-family="Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#0f172a" text-anchor="middle">Student / Counselor</text>
+<line x1="140.0" y1="158" x2="140.0" y2="805" stroke="#64748b" stroke-width="1.2" stroke-dasharray="6,5"/>
+<line x1="132.0" y1="805" x2="148.0" y2="805" stroke="#64748b" stroke-width="1.6"/>
+<rect x="342.5" y="90" width="130" height="36" fill="#f8fafc" stroke="#1e3a8a" stroke-width="1.6" rx="4"/>
+<text x="407.5" y="112" font-family="Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#0f172a" text-anchor="middle">AuthUI</text>
+<line x1="407.5" y1="126" x2="407.5" y2="805" stroke="#64748b" stroke-width="1.2" stroke-dasharray="6,5"/>
+<line x1="399.5" y1="805" x2="415.5" y2="805" stroke="#64748b" stroke-width="1.6"/>
+<rect x="610.0" y="90" width="130" height="36" fill="#f8fafc" stroke="#1e3a8a" stroke-width="1.6" rx="4"/>
+<text x="675.0" y="112" font-family="Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#0f172a" text-anchor="middle">AuthController</text>
+<line x1="675.0" y1="126" x2="675.0" y2="805" stroke="#64748b" stroke-width="1.2" stroke-dasharray="6,5"/>
+<line x1="667.0" y1="805" x2="683.0" y2="805" stroke="#64748b" stroke-width="1.6"/>
+<rect x="877.5" y="90" width="130" height="36" fill="#f8fafc" stroke="#1e3a8a" stroke-width="1.6" rx="4"/>
+<text x="942.5" y="112" font-family="Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#0f172a" text-anchor="middle">SupabaseAuth</text>
+<line x1="942.5" y1="126" x2="942.5" y2="805" stroke="#64748b" stroke-width="1.2" stroke-dasharray="6,5"/>
+<line x1="934.5" y1="805" x2="950.5" y2="805" stroke="#64748b" stroke-width="1.6"/>
+<rect x="1145.0" y="90" width="130" height="36" fill="#f8fafc" stroke="#1e3a8a" stroke-width="1.6" rx="4"/>
+<text x="1210.0" y="112" font-family="Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#0f172a" text-anchor="middle">ProfileRepository</text>
+<line x1="1210.0" y1="126" x2="1210.0" y2="805" stroke="#64748b" stroke-width="1.2" stroke-dasharray="6,5"/>
+<line x1="1202.0" y1="805" x2="1218.0" y2="805" stroke="#64748b" stroke-width="1.6"/>
+<rect x="58" y="341" width="1234" height="456" fill="#f8fafc" fill-opacity="0.35" stroke="#64748b" stroke-width="1.2" rx="3"/>
+<path d="M 58 341 L 114 341 L 114 359 L 106 365 L 58 365 Z" fill="#e2e8f0" stroke="#64748b" stroke-width="1.2"/>
+<text x="68" y="357" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">alt</text>
+<text x="126" y="357" font-family="Arial, sans-serif" font-size="10.5" font-weight="600" font-style="italic" fill="#1e293b">[valid registration data]</text>
+<line x1="58" y1="621" x2="1292" y2="621" stroke="#64748b" stroke-width="1.2" stroke-dasharray="6,4"/>
+<text x="74" y="614" font-family="Arial, sans-serif" font-size="10.5" font-weight="600" font-style="italic" fill="#1e293b">[email already registered or invalid fields]</text>
+<rect x="401.5" y="171" width="12" height="34" fill="#ffffff" stroke="#0f172a" stroke-width="1.3" rx="1.5"/>
+<line x1="140.0" y1="175" x2="407.5" y2="175" stroke="#0f172a" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="273.75" y="167" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#0f172a" text-anchor="middle">register(name, email, password, role)</text>
+<rect x="669.0" y="217" width="12" height="34" fill="#ffffff" stroke="#0f172a" stroke-width="1.3" rx="1.5"/>
+<line x1="407.5" y1="221" x2="675.0" y2="221" stroke="#0f172a" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="541.25" y="213" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#0f172a" text-anchor="middle">submitRegistration(userData)</text>
+<rect x="669.0" y="263" width="12" height="34" fill="#ffffff" stroke="#0f172a" stroke-width="1.3" rx="1.5"/>
+<rect x="677.0" y="266" width="8" height="24" fill="#ffffff" stroke="#0f172a" stroke-width="1.2" rx="1"/>
+<path d="M 685.0 267 L 711.0 267 L 711.0 287 L 685.0 287" fill="none" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+<text x="717.0" y="281" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#0f172a" text-anchor="start">validateFields()</text>
+<rect x="936.5" y="309" width="12" height="34" fill="#ffffff" stroke="#0f172a" stroke-width="1.3" rx="1.5"/>
+<line x1="675.0" y1="313" x2="942.5" y2="313" stroke="#0f172a" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="808.75" y="305" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#0f172a" text-anchor="middle">signUp(email, password)</text>
+<line x1="942.5" y1="391" x2="675.0" y2="391" stroke="#475569" stroke-width="1.3" stroke-dasharray="6,4" marker-end="url(#return-arrow)"/>
+<text x="808.75" y="383" font-family="Arial, sans-serif" font-size="10" font-style="italic" fill="#334155" text-anchor="middle">authSuccess(userId)</text>
+<rect x="1204.0" y="433" width="12" height="34" fill="#ffffff" stroke="#0f172a" stroke-width="1.3" rx="1.5"/>
+<line x1="675.0" y1="437" x2="1210.0" y2="437" stroke="#0f172a" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="942.5" y="429" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#0f172a" text-anchor="middle">createProfile(userId, role, profileData)</text>
+<line x1="1210.0" y1="483" x2="675.0" y2="483" stroke="#475569" stroke-width="1.3" stroke-dasharray="6,4" marker-end="url(#return-arrow)"/>
+<text x="942.5" y="475" font-family="Arial, sans-serif" font-size="10" font-style="italic" fill="#334155" text-anchor="middle">profileCreated()</text>
+<line x1="675.0" y1="529" x2="407.5" y2="529" stroke="#475569" stroke-width="1.3" stroke-dasharray="6,4" marker-end="url(#return-arrow)"/>
+<text x="541.25" y="521" font-family="Arial, sans-serif" font-size="10" font-style="italic" fill="#334155" text-anchor="middle">registrationPending(verifyEmail)</text>
+<line x1="407.5" y1="575" x2="140.0" y2="575" stroke="#475569" stroke-width="1.3" stroke-dasharray="6,4" marker-end="url(#return-arrow)"/>
+<text x="273.75" y="567" font-family="Arial, sans-serif" font-size="10" font-style="italic" fill="#334155" text-anchor="middle">displaySuccessPrompt()</text>
+<line x1="942.5" y1="653" x2="675.0" y2="653" stroke="#475569" stroke-width="1.3" stroke-dasharray="6,4" marker-end="url(#return-arrow)"/>
+<text x="808.75" y="645" font-family="Arial, sans-serif" font-size="10" font-style="italic" fill="#334155" text-anchor="middle">authError(duplicateEmail)</text>
+<line x1="675.0" y1="699" x2="407.5" y2="699" stroke="#475569" stroke-width="1.3" stroke-dasharray="6,4" marker-end="url(#return-arrow)"/>
+<text x="541.25" y="691" font-family="Arial, sans-serif" font-size="10" font-style="italic" fill="#334155" text-anchor="middle">registrationFailed(errorMsg)</text>
+<line x1="407.5" y1="745" x2="140.0" y2="745" stroke="#475569" stroke-width="1.3" stroke-dasharray="6,4" marker-end="url(#return-arrow)"/>
+<text x="273.75" y="737" font-family="Arial, sans-serif" font-size="10" font-style="italic" fill="#334155" text-anchor="middle">displayErrorMessage()</text>
+<text x="675.0" y="870" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">Figure 5.4.1: Sequence Diagram for Register & Create Profile</text>
 </svg>

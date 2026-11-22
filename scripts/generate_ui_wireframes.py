@@ -360,7 +360,7 @@ def build_all_wireframes():
 <rect x="55" y="390" width="310" height="70" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
 <text x="70" y="415" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">Uncompleted Tasks (Roll-over):</text>
 <text x="70" y="435" font-family="Arial, sans-serif" font-size="10" fill="#64748b">☐ Data Structures Assignment (Due Tomorrow)</text>
-<text x="290" y="445" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e3a8a">Move to Tomorrow →</text>
+<text x="350" y="445" font-family="Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#1e3a8a" text-anchor="end">Move to Tomorrow →</text>
 
 <rect x="55" y="480" width="310" height="44" rx="8" fill="#1e3a8a"/>
 <text x="210" y="507" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">+ Add New Academic Task</text>
