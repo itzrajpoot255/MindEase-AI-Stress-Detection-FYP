@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="780" viewBox="0 0 420 780">
+<rect width="420" height="780" fill="#ffffff"/>
+<!-- Mobile Phone Chassis -->
+<rect x="25" y="20" width="370" height="710" rx="36" fill="#f8fafc" stroke="#0f172a" stroke-width="3"/>
+<rect x="35" y="30" width="350" height="690" rx="28" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+
+<!-- Camera Notch / Dynamic Island -->
+<rect x="150" y="38" width="120" height="18" rx="9" fill="#0f172a"/>
+<circle cx="240" cy="47" r="3.5" fill="#1e293b"/>
+
+<!-- Status Bar -->
+<text x="60" y="52" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">9:41</text>
+<text x="350" y="52" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="end">5G 100%</text>
+
+<!-- Screen Content -->
+
+<text x="55" y="90" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#0f172a">Daily Voice Diary Check-in</text>
+<text x="55" y="108" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Speak freely in English, Urdu, or Roman Urdu</text>
+
+<!-- Audio Waveform Visualizer -->
+<rect x="55" y="140" width="310" height="120" rx="12" fill="#0f172a"/>
+<text x="210" y="170" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Recording... 01:24 / 03:00</text>
+<line x1="80" y1="210" x2="80" y2="230" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+<line x1="100" y1="200" x2="100" y2="240" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+<line x1="120" y1="190" x2="120" y2="250" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+<line x1="140" y1="205" x2="140" y2="235" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+<line x1="160" y1="185" x2="160" y2="255" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+<line x1="180" y1="195" x2="180" y2="245" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+<line x1="200" y1="180" x2="200" y2="260" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+<line x1="220" y1="195" x2="220" y2="245" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+<line x1="240" y1="205" x2="240" y2="235" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+<line x1="260" y1="190" x2="260" y2="250" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+<line x1="280" y1="200" x2="280" y2="240" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+<line x1="300" y1="210" x2="300" y2="230" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+
+<!-- Whisper Live Transcription -->
+<text x="55" y="285" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">Whisper ASR Live Transcription:</text>
+<rect x="55" y="295" width="310" height="90" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="70" y="320" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">"Aaj subah se assignment ka bohot load tha,</text>
+<text x="70" y="340" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">raat ko sirf 4 ghante neend aayi aur sir dard hai."</text>
+<text x="70" y="365" font-family="Arial, sans-serif" font-size="9" fill="#10b981">✓ Language detected: Roman Urdu (Confidence 96%)</text>
+
+<!-- Crisis Safety Banner -->
+<rect x="55" y="405" width="310" height="60" rx="8" fill="#fef2f2" stroke="#ef4444"/>
+<text x="70" y="425" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#b91c1c">🔒 100% AES-256 Private Encryption</text>
+<text x="70" y="445" font-family="Arial, sans-serif" font-size="9" fill="#7f1d1d">Your diary is never accessible to university admins.</text>
+
+<rect x="55" y="485" width="310" height="46" rx="8" fill="#1e3a8a"/>
+<text x="210" y="513" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">Stop &amp; Save Diary Entry</text>
+
+
+<!-- Home Navigation Bar Indicator -->
+<rect x="150" y="705" width="120" height="4" rx="2" fill="#94a3b8"/>
+<!-- Figure Title Below -->
+<text x="210.0" y="765" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">Figure 3.3.6: Voice Diary & Whisper Transcription Screen</text>
+</svg>

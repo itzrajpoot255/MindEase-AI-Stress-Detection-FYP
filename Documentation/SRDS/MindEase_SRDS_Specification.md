@@ -45,6 +45,56 @@
 
 ---
 
+## List of Figures
+
+| Figure Number | Caption / Description | File Reference |
+|---|---|---|
+| **Figure 1** | System High-Level Architecture Overview | `01_System_Architecture.png` |
+| **Figure 2** | Comprehensive Use Case Diagram (17 Core Use Cases) | `02_Use_Case_Diagram.png` |
+| **Figure 3** | UI Wireframe: Landing & Student Onboarding Screen | `WF01_Landing_Onboarding_Screen.png` |
+| **Figure 4** | UI Wireframe: Student & Counselor Sign Up Screen | `WF02_Sign_Up_Screen.png` |
+| **Figure 5** | UI Wireframe: Multi-Factor Authentication & Log In Screen | `WF03_Log_In_Screen.png` |
+| **Figure 6** | UI Wireframe: Student Core Dashboard & Metric Overview | `WF04_Student_Dashboard_Screen.png` |
+| **Figure 7** | UI Wireframe: Multilingual Stress Assessment Questionnaire Screen | `WF05_Multilingual_Questionnaire_Screen.png` |
+| **Figure 8** | UI Wireframe: Voice Diary Audio Recording & Waveform Screen | `WF06_Voice_Diary_Screen.png` |
+| **Figure 9** | UI Wireframe: Explainable AI (XAI) Feature Importance Modal | `WF07_XAI_Insights_Screen.png` |
+| **Figure 10** | UI Wireframe: Adaptive Pomodoro Study & Break Planner Screen | `WF08_Adaptive_Study_Planner_Screen.png` |
+| **Figure 11** | UI Wireframe: Verified Counselor Directory & Polar Booking Screen | `WF09_Counselor_Booking_Screen.png` |
+| **Figure 12** | UI Wireframe: Anonymous Peer Community Feed Screen | `WF10_Peer_Community_Feed_Screen.png` |
+| **Figure 13** | Deployment Diagram (Flutter Client, FastAPI Backend, Supabase Cloud) | `07_Deployment_Diagram.png` |
+| **Figure 14** | Object-Oriented Domain Class Diagram | `08_Class_Diagram.png` |
+| **Figure 15** | Entity Relationship Diagram (ERD - Conceptual Data Model) | `09_Entity_Relationship_Diagram.png` |
+| **Figure 16** | Relational Database Physical Schema Design | `10_Database_Schema.png` |
+| **Figure 17** | Data Flow Diagram (DFD) Level 0 - Context Level | `03_DFD_Level_0.png` |
+| **Figure 18** | Data Flow Diagram (DFD) Level 1 - Subsystem Level | `04_DFD_Level_1.png` |
+| **Figure 19** | Data Flow Diagram (DFD) Level 2 - Multimodal Stress Assessment | `05_DFD_Level_2_Stress_Detection.png` |
+| **Figure 20** | Component Diagram (Modular Service Decomposition) | `06_Component_Diagram.png` |
+| **Figure 21** | State Machine Transition Diagram (Stress Assessment & Appointment Lifecycle) | `11_State_Machine_Diagram.png` |
+| **Figure 22** | Sequence Diagram: UC01 Register Account | `UC01_Sequence_Diagram.png` |
+| **Figure 23** | Sequence Diagram: UC02 Log In & Authenticate | `UC02_Sequence_Diagram.png` |
+| **Figure 24** | Sequence Diagram: UC03 View Student Dashboard | `UC03_Sequence_Diagram.png` |
+| **Figure 25** | Sequence Diagram: UC04 Complete Questionnaire Assessment | `UC04_Sequence_Diagram.png` |
+| **Figure 26** | Sequence Diagram: UC05 Record Audio Diary | `UC05_Sequence_Diagram.png` |
+| **Figure 27** | Sequence Diagram: UC06 Sync Passive Sensor Data | `UC06_Sequence_Diagram.png` |
+| **Figure 28** | Sequence Diagram: UC07 View Explainable AI Insights | `UC07_Sequence_Diagram.png` |
+| **Figure 29** | Sequence Diagram: UC08 Generate Adaptive Study Plan | `UC08_Sequence_Diagram.png` |
+| **Figure 30** | Sequence Diagram: UC09 Start Pomodoro Focus Session | `UC09_Sequence_Diagram.png` |
+| **Figure 31** | Sequence Diagram: UC10 Search Verified Counselors | `UC10_Sequence_Diagram.png` |
+| **Figure 32** | Sequence Diagram: UC11 Book Appointment Session | `UC11_Sequence_Diagram.png` |
+| **Figure 33** | Sequence Diagram: UC12 Process Polar Payment | `UC12_Sequence_Diagram.png` |
+| **Figure 34** | Sequence Diagram: UC13 Conduct Chat Consultation | `UC13_Sequence_Diagram.png` |
+| **Figure 35** | Sequence Diagram: UC14 Browse Community Feed | `UC14_Sequence_Diagram.png` |
+| **Figure 36** | Sequence Diagram: UC15 Publish Anonymous Post | `UC15_Sequence_Diagram.png` |
+| **Figure 37** | Sequence Diagram: UC16 Manage Counselor Availability | `UC16_Sequence_Diagram.png` |
+| **Figure 38** | Sequence Diagram: UC17 View Clinical Student Dossier | `UC17_Sequence_Diagram.png` |
+| **Figure 39** | Activity Diagram: AD01 Multimodal Stress Assessment Workflow | `AD01_Multimodal_Stress_Assessment_Workflow.png` |
+| **Figure 40** | Activity Diagram: AD02 Voice Diary Whisper Analysis Workflow | `AD02_Voice_Diary_Whisper_Analysis.png` |
+| **Figure 41** | Activity Diagram: AD03 Adaptive Study & Break Planner Workflow | `AD03_Adaptive_Study_Planner.png` |
+| **Figure 42** | Activity Diagram: AD04 Counselor Booking & Polar Payment Workflow | `AD04_Counselor_Booking_Polar_Payment.png` |
+| **Figure 43** | Activity Diagram: AD05 Anonymous Peer Post Moderation Workflow | `AD05_Community_Post_Moderation.png` |
+
+---
+
 # 1 Introduction
 
 ## 1.1 System Introduction
@@ -487,7 +537,38 @@ Android 9.0+ smartphones (2 GB RAM min), Ubuntu Linux 22.04 LTS cloud server, Py
 ## 3.3 External Interface Requirements
 
 ### 3.3.1 User Interfaces
-Material 3 Flutter interface, calm palette, paginated questionnaire, audio waveform recorder, XAI bottom sheet, Pomodoro study timeline, and counselor directory.
+The MindEase user interface is built on Flutter 3.x using Google's Material 3 design system, adhering strictly to mental health visual ergonomics (calming sage green `#3B7A57`, soft slate, and off-white `#F8F9FA` backgrounds with high-contrast, accessible typography). Below are the high-fidelity UI wireframe specifications for the system:
+
+#### Figure 3.3.1.1: Landing & Student Onboarding Screen
+![Figure 3.3.1.1: Landing & Student Onboarding Screen](../Diagrams/PNG/WF01_Landing_Onboarding_Screen.png)
+
+#### Figure 3.3.1.2: Student & Counselor Sign Up Screen
+![Figure 3.3.1.2: Student & Counselor Sign Up Screen](../Diagrams/PNG/WF02_Sign_Up_Screen.png)
+
+#### Figure 3.3.1.3: Multi-Factor Authentication & Log In Screen
+![Figure 3.3.1.3: Multi-Factor Authentication & Log In Screen](../Diagrams/PNG/WF03_Log_In_Screen.png)
+
+#### Figure 3.3.1.4: Student Core Dashboard & Metric Overview
+![Figure 3.3.1.4: Student Core Dashboard & Metric Overview](../Diagrams/PNG/WF04_Student_Dashboard_Screen.png)
+
+#### Figure 3.3.1.5: Multilingual Stress Assessment Questionnaire Screen
+![Figure 3.3.1.5: Multilingual Stress Assessment Questionnaire Screen](../Diagrams/PNG/WF05_Multilingual_Questionnaire_Screen.png)
+
+#### Figure 3.3.1.6: Voice Diary Audio Recording & Waveform Screen
+![Figure 3.3.1.6: Voice Diary Audio Recording & Waveform Screen](../Diagrams/PNG/WF06_Voice_Diary_Screen.png)
+
+#### Figure 3.3.1.7: Explainable AI (XAI) Feature Importance Modal
+![Figure 3.3.1.7: Explainable AI (XAI) Feature Importance Modal](../Diagrams/PNG/WF07_XAI_Insights_Screen.png)
+
+#### Figure 3.3.1.8: Adaptive Pomodoro Study & Break Planner Screen
+![Figure 3.3.1.8: Adaptive Pomodoro Study & Break Planner Screen](../Diagrams/PNG/WF08_Adaptive_Study_Planner_Screen.png)
+
+#### Figure 3.3.1.9: Verified Counselor Directory & Polar Booking Screen
+![Figure 3.3.1.9: Verified Counselor Directory & Polar Booking Screen](../Diagrams/PNG/WF09_Counselor_Booking_Screen.png)
+
+#### Figure 3.3.1.10: Anonymous Peer Community Feed Screen
+![Figure 3.3.1.10: Anonymous Peer Community Feed Screen](../Diagrams/PNG/WF10_Peer_Community_Feed_Screen.png)
+
 
 ### 3.3.2 Hardware Interfaces
 Microphone (16kHz PCM), Android step sensor, screen time usage manager, and flash storage.

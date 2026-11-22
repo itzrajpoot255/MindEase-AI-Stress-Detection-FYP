@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="780" viewBox="0 0 420 780">
+<rect width="420" height="780" fill="#ffffff"/>
+<!-- Mobile Phone Chassis -->
+<rect x="25" y="20" width="370" height="710" rx="36" fill="#f8fafc" stroke="#0f172a" stroke-width="3"/>
+<rect x="35" y="30" width="350" height="690" rx="28" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+
+<!-- Camera Notch / Dynamic Island -->
+<rect x="150" y="38" width="120" height="18" rx="9" fill="#0f172a"/>
+<circle cx="240" cy="47" r="3.5" fill="#1e293b"/>
+
+<!-- Status Bar -->
+<text x="60" y="52" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">9:41</text>
+<text x="350" y="52" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="end">5G 100%</text>
+
+<!-- Screen Content -->
+
+<text x="55" y="90" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#0f172a">Student Community</text>
+<text x="55" y="108" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Peer support, coping strategies, safe space</text>
+
+<!-- Community Post 1 -->
+<rect x="55" y="130" width="310" height="160" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+<circle cx="80" cy="155" r="14" fill="#e2e8f0"/>
+<text x="80" y="160" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">👤</text>
+<text x="105" y="155" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">Anonymous Student #402</text>
+<text x="105" y="169" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8">2 hours ago • Exams &amp; Stress</text>
+
+<text x="70" y="195" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">Anyone else feeling overwhelmed by the 7th semester</text>
+<text x="70" y="210" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">FYP deadlines? How are you guys managing sleep?</text>
+
+<!-- Counselor Reply Inside Post -->
+<rect x="70" y="225" width="280" height="50" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="80" y="243" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e40af">Dr. Ayesha Tariq [VERIFIED COUNSELOR]:</text>
+<text x="80" y="259" font-family="Arial, sans-serif" font-size="9" fill="#334155">Break tasks into 30m Pomodoro blocks. Prioritize 7h sleep!</text>
+
+<!-- Post Action Bar -->
+<text x="70" y="282" font-family="Arial, sans-serif" font-size="9" fill="#64748b">❤️ 24 Likes   💬 8 Replies   🚩 Report</text>
+
+<!-- Community Post 2 -->
+<rect x="55" y="305" width="310" height="110" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+<circle cx="80" cy="330" r="14" fill="#e2e8f0"/>
+<text x="80" y="335" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">👤</text>
+<text x="105" y="330" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">CS Student Wah</text>
+<text x="105" y="344" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8">5 hours ago • Recovery Tips</text>
+<text x="70" y="370" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">The 10-minute guided breathing audio in the app</text>
+<text x="70" y="385" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">really helped lower my anxiety before my viva!</text>
+
+<rect x="55" y="475" width="310" height="44" rx="8" fill="#1e3a8a"/>
+<text x="210" y="502" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">+ Share Anonymous Experience</text>
+
+
+<!-- Home Navigation Bar Indicator -->
+<rect x="150" y="705" width="120" height="4" rx="2" fill="#94a3b8"/>
+<!-- Figure Title Below -->
+<text x="210.0" y="765" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">Figure 3.3.10: Peer Community Support Feed Screen</text>
+</svg>

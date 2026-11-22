@@ -4,7 +4,7 @@
 [![Department](https://img.shields.io/badge/Department-Computer%20Science-navy.svg)](https://wah.comsats.edu.pk/)
 [![Campus](https://img.shields.io/badge/Institution-COMSATS%20University%20Islamabad%20(Wah%20Campus)-green.svg)](https://wah.comsats.edu.pk/)
 [![Status](https://img.shields.io/badge/Documentation-SRDS%20Complete-brightgreen.svg)]()
-[![Diagrams](https://img.shields.io/badge/UML%20Diagrams-33%20Verified%20(300%20DPI)-orange.svg)]()
+[![Diagrams](https://img.shields.io/badge/UML%20Diagrams-43%20Verified%20(300%20DPI)-orange.svg)]()
 
 > **Final Year Project (FYP) Software Requirements and Design Specification (SRDS)**  
 > **Stream:** Mobile Apps FYPs  
@@ -78,7 +78,7 @@ MindEase is built on an enterprise multi-tier architecture ensuring data privacy
 
 ---
 
-## 📊 Complete Diagram Inventory (33 Verified Diagrams)
+## 📊 Complete Diagram Inventory (43 Verified Diagrams)
 
 All diagrams adhere strictly to university academic standards: pure white background (`#FFFFFF`), high-contrast professional styling, clean UML notation, and zero overlapping elements. Every diagram is available in five (5) distinct deliverable formats:
 
@@ -131,6 +131,22 @@ In strict accordance with the mandatory project requirement, **every single Use 
 | **UC16** | Manage System Users & Counselor Approvals | `UC16_Sequence_Diagram.drawio` | Figure 5.4.16 |
 | **UC17** | Moderate Community Reports & System Content | `UC17_Sequence_Diagram.drawio` | Figure 5.4.17 |
 
+### 4. UI Screen Wireframe Diagrams (Material 3 Visual Interface Design)
+To satisfy the official university SRDS List of Figures, 10 high-fidelity user interface wireframes were architected according to Google Material 3 standards and mental health UI guidelines:
+
+| Wireframe ID | Screen Name | Diagram Reference | Key Elements |
+|:---:|:---|:---|:---|
+| **WF01** | Landing & Onboarding Screen | `WF01_Landing_Onboarding_Screen.drawio` | Value propositions, multi-tier trust badges, primary student CTAs |
+| **WF02** | Student & Counselor Sign Up | `WF02_Sign_Up_Screen.drawio` | Role selection toggle, university domain email check, password meter |
+| **WF03** | Log In & Multi-Factor Auth | `WF03_Log_In_Screen.drawio` | Credential inputs, biometric login option, password reset link |
+| **WF04** | Student Core Dashboard | `WF04_Student_Dashboard_Screen.drawio` | Stress score dial (0-100), baseline HRV chart, quick-checkin card |
+| **WF05** | Multilingual Questionnaire | `WF05_Multilingual_Questionnaire_Screen.drawio` | PSS-10 / DASS-21 Likert slider, EN/UR toggle, question pagination |
+| **WF06** | Voice Diary & Audio Studio | `WF06_Voice_Diary_Screen.drawio` | Real-time audio waveform recorder, Whisper transcription preview |
+| **WF07** | Explainable AI (XAI) Modal | `WF07_XAI_Insights_Screen.drawio` | SHAP feature contribution bar chart, plain-language student advice |
+| **WF08** | Adaptive Pomodoro Planner | `WF08_Adaptive_Study_Planner_Screen.drawio` | Stress-calibrated work/rest intervals, active study task tracker |
+| **WF09** | Counselor Booking Directory | `WF09_Counselor_Booking_Screen.drawio` | Verified practitioner cards, time-slot selector, Polar sandbox checkout |
+| **WF10** | Anonymous Peer Community | `WF10_Peer_Community_Feed_Screen.drawio` | Anonymous posting interface, crisis detection banner, empathy reaction chips |
+
 ---
 
 ## 📁 Repository Directory Structure
@@ -139,14 +155,14 @@ In strict accordance with the mandatory project requirement, **every single Use 
 FYP_Project/
 ├── Documentation/
 │   ├── SRDS/
-│   │   ├── MindEase_SRDS_Specification.docx    # Complete University Formatted Word Doc (9.5 MB)
+│   │   ├── MindEase_SRDS_Specification.docx    # Complete University Formatted Word Doc (11.1 MB)
 │   │   └── MindEase_SRDS_Specification.md      # Full Markdown Specification Document (60 KB)
 │   ├── Diagrams/
-│   │   ├── Editable/                           # 33 Native Draw.io XML files (.drawio)
+│   │   ├── Editable/                           # 43 Native Draw.io XML files (.drawio)
 │   │   ├── Visio/                              # 33 Microsoft Visio-compatible files (.drawio)
-│   │   ├── SVG/                                # 33 Scalable Vector Graphics (.svg)
-│   │   ├── PNG/                                # 33 High-Resolution 300 DPI PNGs (.png)
-│   │   └── PDF/                                # 33 Single-page PDFs + All_MindEase_Diagrams.pdf (2.76 MB)
+│   │   ├── SVG/                                # 43 Scalable Vector Graphics (.svg)
+│   │   ├── PNG/                                # 43 High-Resolution 300 DPI PNGs (.png)
+│   │   └── PDF/                                # 43 Single-page PDFs + All_MindEase_Diagrams.pdf (6.93 MB)
 │   ├── Reports/
 │   │   ├── Traceability_Matrix.md              # 1:1 Use Case to Sequence Diagram Audit Matrix
 │   │   └── QA_Verification_Report.md           # Technical Verification & Quality Sign-Off Report
