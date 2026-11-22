@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="950" height="750" viewBox="0 0 950 750">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#0f172a"/></marker></defs>
+<rect width="950" height="750" fill="#ffffff"/>
+<rect x="25" y="25" width="900" height="690" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+<text x="45" y="50" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">Activity Diagram: Adaptive Study and Recovery Planner Workflow</text>
+
+<circle cx="475" cy="90" r="14" fill="#0f172a"/>
+
+<rect x="375" y="130" width="200" height="45" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5" rx="8"/>
+<text x="475" y="157" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Enter Tasks &amp; Deadlines</text>
+<line x1="475" y1="104" x2="475" y2="130" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+
+<rect x="375" y="205" width="200" height="45" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5" rx="8"/>
+<text x="475" y="232" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Fetch Current Stress State</text>
+<line x1="475" y1="175" x2="475" y2="205" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+
+<!-- Diamond -->
+<polygon points="425,295 475,270 525,295 475,320" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5"/>
+<line x1="475" y1="250" x2="475" y2="270" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+
+<!-- High stress branch -->
+<rect x="180" y="340" width="220" height="50" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5" rx="8"/>
+<text x="290" y="362" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Generate Light Study Plan</text>
+<text x="290" y="378" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">(25m focus, 15m mindfulness)</text>
+<line x1="425" y1="295" x2="290" y2="295" stroke="#0f172a" stroke-width="1.3"/>
+<line x1="290" y1="295" x2="290" y2="340" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+<text x="340" y="285" font-family="Arial, sans-serif" font-size="9" fill="#0f172a">[High Stress]</text>
+
+<!-- Normal branch -->
+<rect x="550" y="340" width="220" height="50" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5" rx="8"/>
+<text x="660" y="362" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Generate Standard Pomodoro</text>
+<text x="660" y="378" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">(50m study, 10m break)</text>
+<line x1="525" y1="295" x2="660" y2="295" stroke="#0f172a" stroke-width="1.3"/>
+<line x1="660" y1="295" x2="660" y2="340" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+<text x="590" y="285" font-family="Arial, sans-serif" font-size="9" fill="#0f172a">[Low / Moderate]</text>
+
+<!-- Merge -->
+<polygon points="440,445 475,425 510,445 475,465" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5"/>
+<line x1="290" y1="390" x2="290" y2="445" stroke="#0f172a" stroke-width="1.3"/>
+<line x1="290" y1="445" x2="440" y2="445" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+<line x1="660" y1="390" x2="660" y2="445" stroke="#0f172a" stroke-width="1.3"/>
+<line x1="660" y1="445" x2="510" y2="445" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+
+<rect x="375" y="495" width="200" height="45" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5" rx="8"/>
+<text x="475" y="522" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Execute Sessions &amp; Track</text>
+<line x1="475" y1="465" x2="475" y2="495" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+
+<circle cx="475" cy="590" r="14" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<circle cx="475" cy="590" r="9" fill="#0f172a"/>
+<line x1="475" y1="540" x2="475" y2="576" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+
+<text x="475.0" y="735" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">Figure 5.6.3: Activity Diagram for Adaptive Study and Recovery Planner</text>
+</svg>

@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000">
+<defs>
+  <marker id="inheritance" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+  </marker>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f172a"/>
+  </marker>
+</defs>
+<rect width="1200" height="1000" fill="#ffffff"/>
+<rect x="20" y="20" width="1160" height="950" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+<text x="40" y="45" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">MindEase Domain UML Class Diagram</text>
+
+<!-- Class 1: User (Base) -->
+<rect x="490" y="60" width="220" height="130" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="490" y="60" width="220" height="26" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5"/>
+<text x="600" y="78" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">User</text>
+<text x="500" y="100" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- id: UUID</text>
+<text x="500" y="114" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- name: String</text>
+<text x="500" y="128" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- email: String</text>
+<text x="500" y="142" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- role: UserRole</text>
+<line x1="490" y1="148" x2="710" y2="148" stroke="#0f172a" stroke-width="1"/>
+<text x="500" y="162" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ register(): Boolean</text>
+<text x="500" y="176" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ login(): TokenSession</text>
+
+<!-- Class 2: Student (extends User) -->
+<rect x="220" y="240" width="220" height="130" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="220" y="240" width="220" height="26" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5"/>
+<text x="330" y="258" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">Student</text>
+<text x="230" y="280" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- universityId: String</text>
+<text x="230" y="294" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- academicProgram: String</text>
+<text x="230" y="308" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- baselineScore: Float</text>
+<line x1="220" y1="314" x2="440" y2="314" stroke="#0f172a" stroke-width="1"/>
+<text x="230" y="328" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ takeAssessment(): Result</text>
+<text x="230" y="342" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ logDiary(): DiaryEntry</text>
+<text x="230" y="356" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ bookCounselor(): Appt</text>
+
+<!-- Class 3: Counselor (extends User) -->
+<rect x="490" y="240" width="220" height="130" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="490" y="240" width="220" height="26" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5"/>
+<text x="600" y="258" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">Counselor</text>
+<text x="500" y="280" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- licenseNumber: String</text>
+<text x="500" y="294" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- specialization: String</text>
+<text x="500" y="308" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- isApproved: Boolean</text>
+<line x1="490" y1="314" x2="710" y2="314" stroke="#0f172a" stroke-width="1"/>
+<text x="500" y="328" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ reviewHistory(): Records</text>
+<text x="500" y="342" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ addClinicalNote(): Note</text>
+<text x="500" y="356" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ setAvailability(): Slots</text>
+
+<!-- Class 4: Administrator (extends User) -->
+<rect x="760" y="240" width="220" height="130" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="760" y="240" width="220" height="26" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5"/>
+<text x="870" y="258" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">Administrator</text>
+<text x="770" y="280" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- adminLevel: Int</text>
+<text x="770" y="294" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- lastLoginIp: String</text>
+<line x1="760" y1="304" x2="980" y2="304" stroke="#0f172a" stroke-width="1"/>
+<text x="770" y="320" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ approveCounselor(): Bool</text>
+<text x="770" y="336" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ moderateReport(): Bool</text>
+<text x="770" y="352" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ manageContent(): Item</text>
+
+<!-- Inheritance arrows to User -->
+<line x1="330" y1="240" x2="330" y2="210" stroke="#0f172a" stroke-width="1.5"/>
+<line x1="330" y1="210" x2="600" y2="210" stroke="#0f172a" stroke-width="1.5"/>
+<line x1="600" y1="210" x2="600" y2="190" stroke="#0f172a" stroke-width="1.5" marker-end="url(#inheritance)"/>
+
+<line x1="600" y1="240" x2="600" y2="190" stroke="#0f172a" stroke-width="1.5"/>
+
+<line x1="870" y1="240" x2="870" y2="210" stroke="#0f172a" stroke-width="1.5"/>
+<line x1="870" y1="210" x2="600" y2="210" stroke="#0f172a" stroke-width="1.5"/>
+
+<!-- Class 5: StressAssessment -->
+<rect x="50" y="440" width="220" height="140" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="50" y="440" width="220" height="26" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5"/>
+<text x="160" y="458" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">StressAssessment</text>
+<text x="60" y="480" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- assessmentId: UUID</text>
+<text x="60" y="494" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- stressLevel: StressEnum</text>
+<text x="60" y="508" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- confidence: Float</text>
+<text x="60" y="522" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- timestamp: DateTime</text>
+<line x1="50" y1="528" x2="270" y2="528" stroke="#0f172a" stroke-width="1"/>
+<text x="60" y="544" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ fuseInputs(): Level</text>
+<text x="60" y="560" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ triggerAlert(): Boolean</text>
+
+<!-- Class 6: XAIInsight -->
+<rect x="50" y="650" width="220" height="130" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="50" y="650" width="220" height="26" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5"/>
+<text x="160" y="668" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">XAIInsight</text>
+<text x="60" y="690" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- insightId: UUID</text>
+<text x="60" y="704" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- topDrivers: List&lt;String&gt;</text>
+<text x="60" y="718" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- shapWeights: Map&lt;Str,Flt&gt;</text>
+<line x1="50" y1="724" x2="270" y2="724" stroke="#0f172a" stroke-width="1"/>
+<text x="60" y="740" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ computeShap(): Map</text>
+<text x="60" y="756" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ generateTips(): List</text>
+
+<!-- Class 7: DailyDiary -->
+<rect x="300" y="440" width="200" height="140" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="300" y="440" width="200" height="26" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5"/>
+<text x="400" y="458" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">DailyDiary</text>
+<text x="310" y="480" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- diaryId: UUID</text>
+<text x="310" y="494" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- audioUrl: String</text>
+<text x="310" y="508" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- transcribedText: String</text>
+<text x="310" y="522" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- sentimentScore: Float</text>
+<line x1="300" y1="528" x2="500" y2="528" stroke="#0f172a" stroke-width="1"/>
+<text x="310" y="544" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ transcribe(): String</text>
+<text x="310" y="560" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ checkCrisis(): Boolean</text>
+
+<!-- Class 8: AdaptiveStudyPlan -->
+<rect x="300" y="650" width="200" height="130" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="300" y="650" width="200" height="26" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5"/>
+<text x="400" y="668" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">AdaptiveStudyPlan</text>
+<text x="310" y="690" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- planId: UUID</text>
+<text x="310" y="704" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- sessionDuration: Int</text>
+<text x="310" y="718" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- breakDuration: Int</text>
+<line x1="300" y1="724" x2="500" y2="724" stroke="#0f172a" stroke-width="1"/>
+<text x="310" y="740" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ adaptToStress(): Plan</text>
+<text x="310" y="756" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ reschedule(): Bool</text>
+
+<!-- Class 9: Appointment -->
+<rect x="530" y="440" width="210" height="140" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="530" y="440" width="210" height="26" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5"/>
+<text x="635" y="458" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">Appointment</text>
+<text x="540" y="480" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- appointmentId: UUID</text>
+<text x="540" y="494" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- scheduledAt: DateTime</text>
+<text x="540" y="508" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- status: ApptStatus</text>
+<text x="540" y="522" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- isFreeTier: Boolean</text>
+<line x1="530" y1="528" x2="740" y2="528" stroke="#0f172a" stroke-width="1"/>
+<text x="540" y="544" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ confirmBooking(): Bool</text>
+<text x="540" y="560" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ completeSession(): Void</text>
+
+<!-- Class 10: PaymentTransaction -->
+<rect x="530" y="650" width="210" height="130" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="530" y="650" width="210" height="26" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5"/>
+<text x="635" y="668" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">PaymentTransaction</text>
+<text x="540" y="690" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- transactionId: UUID</text>
+<text x="540" y="704" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- polarPaymentId: String</text>
+<text x="540" y="718" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- amount: Decimal</text>
+<line x1="530" y1="724" x2="740" y2="724" stroke="#0f172a" stroke-width="1"/>
+<text x="540" y="740" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ initiateCheckout(): Url</text>
+<text x="540" y="756" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ verifyWebhook(): Bool</text>
+
+<!-- Class 11: CommunityPost -->
+<rect x="770" y="440" width="210" height="140" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="770" y="440" width="210" height="26" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5"/>
+<text x="875" y="458" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">CommunityPost</text>
+<text x="780" y="480" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- postId: UUID</text>
+<text x="780" y="494" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- isAnonymous: Boolean</text>
+<text x="780" y="508" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- content: String</text>
+<text x="780" y="522" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- reportCount: Int</text>
+<line x1="770" y1="528" x2="980" y2="528" stroke="#0f172a" stroke-width="1"/>
+<text x="780" y="544" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ flagPost(): Void</text>
+<text x="780" y="560" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ addReply(): Reply</text>
+
+<!-- Class 12: ContentResource -->
+<rect x="770" y="650" width="210" height="130" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="770" y="650" width="210" height="26" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5"/>
+<text x="875" y="668" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">ContentResource</text>
+<text x="780" y="690" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- contentId: UUID</text>
+<text x="780" y="704" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- title: String</text>
+<text x="780" y="718" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">- mediaType: MediaEnum</text>
+<line x1="770" y1="724" x2="980" y2="724" stroke="#0f172a" stroke-width="1"/>
+<text x="780" y="740" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ streamMedia(): Stream</text>
+<text x="780" y="756" font-family="Arial, sans-serif" font-size="10" fill="#0f172a">+ rateEffectiveness(): Void</text>
+
+<!-- Relationships / Multiplicities -->
+<line x1="250" y1="370" x2="160" y2="440" stroke="#0f172a" stroke-width="1.3"/>
+<text x="210" y="415" font-family="Arial, sans-serif" font-size="9" fill="#0f172a">1 .. *</text>
+
+<line x1="160" y1="580" x2="160" y2="650" stroke="#0f172a" stroke-width="1.3"/>
+<text x="170" y="620" font-family="Arial, sans-serif" font-size="9" fill="#0f172a">1 .. 1</text>
+
+<line x1="330" y1="370" x2="350" y2="440" stroke="#0f172a" stroke-width="1.3"/>
+<text x="350" y="415" font-family="Arial, sans-serif" font-size="9" fill="#0f172a">1 .. *</text>
+
+<line x1="635" y1="370" x2="635" y2="440" stroke="#0f172a" stroke-width="1.3"/>
+<text x="645" y="415" font-family="Arial, sans-serif" font-size="9" fill="#0f172a">1 .. *</text>
+
+<line x1="635" y1="580" x2="635" y2="650" stroke="#0f172a" stroke-width="1.3"/>
+<text x="645" y="620" font-family="Arial, sans-serif" font-size="9" fill="#0f172a">0 .. 1</text>
+
+<!-- Caption -->
+<text x="600.0" y="985" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">Figure 5.2.1: MindEase Domain UML Class Diagram with Relationships &amp; Multiplicities</text>
+</svg>

@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="800" viewBox="0 0 1100 800">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f172a"/>
+  </marker>
+</defs>
+<rect width="1100" height="800" fill="#ffffff"/>
+<rect x="25" y="25" width="1050" height="740" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+<text x="45" y="50" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">MindEase System Component Diagram</text>
+
+<!-- Component 1: Mobile App Package -->
+<rect x="50" y="80" width="300" height="630" fill="#f8fafc" stroke="#3b82f6" stroke-width="1.5" rx="4"/>
+<text x="70" y="105" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1e40af">&lt;&lt;component&gt;&gt; Mobile App (Flutter)</text>
+
+<rect x="70" y="130" width="260" height="60" fill="#ffffff" stroke="#64748b" stroke-width="1.2" rx="4"/>
+<text x="200" y="155" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Presentation Module</text>
+<text x="200" y="175" font-family="Arial, sans-serif" font-size="10" fill="#475569" text-anchor="middle">UI Screens, Widgets, Charts</text>
+
+<rect x="70" y="210" width="260" height="60" fill="#ffffff" stroke="#64748b" stroke-width="1.2" rx="4"/>
+<text x="200" y="235" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">State Management (BLoC)</text>
+<text x="200" y="255" font-family="Arial, sans-serif" font-size="10" fill="#475569" text-anchor="middle">AssessmentBloc, DiaryBloc, AuthBloc</text>
+
+<rect x="70" y="290" width="260" height="60" fill="#ffffff" stroke="#64748b" stroke-width="1.2" rx="4"/>
+<text x="200" y="315" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Audio Recording Module</text>
+<text x="200" y="335" font-family="Arial, sans-serif" font-size="10" fill="#475569" text-anchor="middle">Microphone Stream &amp; Codec</text>
+
+<rect x="70" y="370" width="260" height="60" fill="#ffffff" stroke="#64748b" stroke-width="1.2" rx="4"/>
+<text x="200" y="395" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Sensors &amp; Habit Collector</text>
+<text x="200" y="415" font-family="Arial, sans-serif" font-size="10" fill="#475569" text-anchor="middle">Step Counter, Screen Time API</text>
+
+<rect x="70" y="450" width="260" height="60" fill="#ffffff" stroke="#64748b" stroke-width="1.2" rx="4"/>
+<text x="200" y="475" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">API Client &amp; Dio Service</text>
+<text x="200" y="495" font-family="Arial, sans-serif" font-size="10" fill="#475569" text-anchor="middle">REST Client, Interceptors, Tokens</text>
+
+<rect x="70" y="530" width="260" height="60" fill="#ffffff" stroke="#64748b" stroke-width="1.2" rx="4"/>
+<text x="200" y="555" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Local Secure Storage</text>
+<text x="200" y="575" font-family="Arial, sans-serif" font-size="10" fill="#475569" text-anchor="middle">Encrypted SharedPreferences, Cache</text>
+
+<!-- Component 2: Backend Application Package -->
+<rect x="400" y="80" width="340" height="630" fill="#f8fafc" stroke="#10b981" stroke-width="1.5" rx="4"/>
+<text x="420" y="105" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#047857">&lt;&lt;component&gt;&gt; FastAPI Backend Server</text>
+
+<rect x="420" y="130" width="300" height="50" fill="#ffffff" stroke="#64748b" stroke-width="1.2" rx="4"/>
+<text x="570" y="152" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">API Gateway &amp; Middleware</text>
+<text x="570" y="168" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">CORS, JWT Authentication, Logging</text>
+
+<rect x="420" y="195" width="300" height="50" fill="#ffffff" stroke="#64748b" stroke-width="1.2" rx="4"/>
+<text x="570" y="217" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Stress Assessment Controller</text>
+<text x="570" y="233" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">Scoring, PSS Rules, Habit Fusion</text>
+
+<rect x="420" y="260" width="300" height="50" fill="#ffffff" stroke="#64748b" stroke-width="1.2" rx="4"/>
+<text x="570" y="282" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Diary &amp; Safety Controller</text>
+<text x="570" y="298" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">Whisper Dispatch, Crisis Triggers</text>
+
+<rect x="420" y="325" width="300" height="50" fill="#ffffff" stroke="#64748b" stroke-width="1.2" rx="4"/>
+<text x="570" y="347" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Baseline &amp; XAI Service</text>
+<text x="570" y="363" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">Historical Deviation, SHAP Explainer</text>
+
+<rect x="420" y="390" width="300" height="50" fill="#ffffff" stroke="#64748b" stroke-width="1.2" rx="4"/>
+<text x="570" y="412" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Adaptive Study Planner Engine</text>
+<text x="570" y="428" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">Task Chunking &amp; Stress Load Tuning</text>
+
+<rect x="420" y="455" width="300" height="50" fill="#ffffff" stroke="#64748b" stroke-width="1.2" rx="4"/>
+<text x="570" y="477" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Counselor &amp; Community Service</text>
+<text x="570" y="493" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">Booking, Clinical Notes, Moderation</text>
+
+<rect x="420" y="520" width="300" height="50" fill="#ffffff" stroke="#64748b" stroke-width="1.2" rx="4"/>
+<text x="570" y="542" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Polar Payment Webhook Handler</text>
+<text x="570" y="558" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">Signature Verification &amp; Confirmation</text>
+
+<!-- Component 3: Machine Learning Subsystem -->
+<rect x="780" y="80" width="280" height="300" fill="#f8fafc" stroke="#8b5cf6" stroke-width="1.5" rx="4"/>
+<text x="800" y="105" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#6d28d9">&lt;&lt;component&gt;&gt; ML &amp; NLP Models</text>
+
+<rect x="800" y="125" width="240" height="45" fill="#ffffff" stroke="#64748b" stroke-width="1.2" rx="4"/>
+<text x="920" y="147" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Whisper ASR Model</text>
+<text x="920" y="162" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">Speech Transcription (Urdu/English)</text>
+
+<rect x="800" y="180" width="240" height="45" fill="#ffffff" stroke="#64748b" stroke-width="1.2" rx="4"/>
+<text x="920" y="202" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Multimodal Stress Classifier</text>
+<text x="920" y="217" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">Scikit-learn / PyTorch Fusion</text>
+
+<rect x="800" y="235" width="240" height="45" fill="#ffffff" stroke="#64748b" stroke-width="1.2" rx="4"/>
+<text x="920" y="257" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">SHAP Attribution Engine</text>
+<text x="920" y="272" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">Explainability Heatmap &amp; Drivers</text>
+
+<rect x="800" y="290" width="240" height="45" fill="#ffffff" stroke="#64748b" stroke-width="1.2" rx="4"/>
+<text x="920" y="312" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Conversational Chatbot LLM</text>
+<text x="920" y="327" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">Contextual Student Support</text>
+
+<!-- Component 4: Persistence Subsystem -->
+<rect x="780" y="410" width="280" height="300" fill="#f8fafc" stroke="#0284c7" stroke-width="1.5" rx="4"/>
+<text x="800" y="435" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#0369a1">&lt;&lt;component&gt;&gt; Supabase Cloud</text>
+
+<rect x="800" y="455" width="240" height="45" fill="#ffffff" stroke="#64748b" stroke-width="1.2" rx="4"/>
+<text x="920" y="477" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">PostgreSQL Database</text>
+<text x="920" y="492" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">Relational Schema &amp; Views</text>
+
+<rect x="800" y="510" width="240" height="45" fill="#ffffff" stroke="#64748b" stroke-width="1.2" rx="4"/>
+<text x="920" y="532" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Supabase Auth (GoTrue)</text>
+<text x="920" y="547" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">JWT, RLS Policy Security</text>
+
+<rect x="800" y="565" width="240" height="45" fill="#ffffff" stroke="#64748b" stroke-width="1.2" rx="4"/>
+<text x="920" y="587" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Encrypted Diary Store</text>
+<text x="920" y="602" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">AES-256 Storage Isolation</text>
+
+<rect x="800" y="620" width="240" height="45" fill="#ffffff" stroke="#64748b" stroke-width="1.2" rx="4"/>
+<text x="920" y="642" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Object Media Storage</text>
+<text x="920" y="657" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">Audio &amp; Video Relaxation Files</text>
+
+<!-- Connectors -->
+<line x1="350" y1="200" x2="400" y2="200" stroke="#0f172a" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="740" y1="200" x2="780" y2="200" stroke="#0f172a" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="740" y1="500" x2="780" y2="500" stroke="#0f172a" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<!-- Caption -->
+<text x="550.0" y="785" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">Figure 5.1.2: MindEase Component Diagram (Presentation, Business Logic, AI, and Persistence Layers)</text>
+</svg>

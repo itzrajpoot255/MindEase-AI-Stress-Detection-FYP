@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="850" viewBox="0 0 1050 850">
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#0f172a"/></marker>
+<marker id="async" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10" fill="none" stroke="#0f172a" stroke-width="1.5"/></marker>
+<marker id="return-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10" fill="none" stroke="#334155" stroke-width="1.5"/></marker>
+</defs>
+<rect width="1050" height="850" fill="#ffffff"/>
+<rect x="40" y="30" width="970" height="760" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+<path d="M 40 30 L 506.0 30 L 506.0 52 L 494.0 62 L 40 62 Z" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+<text x="50" y="50" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a">sd UC06: View Stress Trends & Baseline Trigger Analysis</text>
+<line x1="110.0" y1="135" x2="110.0" y2="720" stroke="#64748b" stroke-width="1.2" stroke-dasharray="5,5"/>
+<circle cx="110.0" cy="100" r="8" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<line x1="110.0" y1="108" x2="110.0" y2="124" stroke="#0f172a" stroke-width="1.5"/>
+<line x1="98.0" y1="114" x2="122.0" y2="114" stroke="#0f172a" stroke-width="1.5"/>
+<line x1="110.0" y1="124" x2="100.0" y2="138" stroke="#0f172a" stroke-width="1.5"/>
+<line x1="110.0" y1="124" x2="120.0" y2="138" stroke="#0f172a" stroke-width="1.5"/>
+<text x="110.0" y="82" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Student</text>
+<circle cx="110.0" cy="730" r="8" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<line x1="110.0" y1="738" x2="110.0" y2="754" stroke="#0f172a" stroke-width="1.5"/>
+<line x1="98.0" y1="744" x2="122.0" y2="744" stroke="#0f172a" stroke-width="1.5"/>
+<line x1="110.0" y1="754" x2="100.0" y2="768" stroke="#0f172a" stroke-width="1.5"/>
+<line x1="110.0" y1="754" x2="120.0" y2="768" stroke="#0f172a" stroke-width="1.5"/>
+<text x="110.0" y="774" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Student</text>
+<line x1="317.5" y1="125" x2="317.5" y2="720" stroke="#64748b" stroke-width="1.2" stroke-dasharray="5,5"/>
+<rect x="262.5" y="90" width="110" height="32" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5" rx="3"/>
+<text x="317.5" y="110" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">TrendsUI</text>
+<rect x="262.5" y="720" width="110" height="32" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5" rx="3"/>
+<text x="317.5" y="740" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">TrendsUI</text>
+<line x1="525.0" y1="125" x2="525.0" y2="720" stroke="#64748b" stroke-width="1.2" stroke-dasharray="5,5"/>
+<rect x="470.0" y="90" width="110" height="32" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5" rx="3"/>
+<text x="525.0" y="110" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">TrendsController</text>
+<rect x="470.0" y="720" width="110" height="32" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5" rx="3"/>
+<text x="525.0" y="740" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">TrendsController</text>
+<line x1="732.5" y1="125" x2="732.5" y2="720" stroke="#64748b" stroke-width="1.2" stroke-dasharray="5,5"/>
+<rect x="677.5" y="90" width="110" height="32" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5" rx="3"/>
+<text x="732.5" y="110" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">BaselineAnalysisEngine</text>
+<rect x="677.5" y="720" width="110" height="32" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5" rx="3"/>
+<text x="732.5" y="740" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">BaselineAnalysisEngine</text>
+<line x1="940.0" y1="125" x2="940.0" y2="720" stroke="#64748b" stroke-width="1.2" stroke-dasharray="5,5"/>
+<rect x="885.0" y="90" width="110" height="32" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5" rx="3"/>
+<text x="940.0" y="110" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">StressRepository</text>
+<rect x="885.0" y="720" width="110" height="32" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5" rx="3"/>
+<text x="940.0" y="740" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">StressRepository</text>
+<rect x="311.5" y="160" width="12" height="32" fill="#ffffff" stroke="#1e293b" stroke-width="1.2"/>
+<line x1="110.0" y1="165" x2="317.5" y2="165" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+<text x="213.75" y="158" font-family="Arial, sans-serif" font-size="11" fill="#0f172a" text-anchor="middle">selectTrendRange(Weekly | Monthly)</text>
+<rect x="519.0" y="202" width="12" height="32" fill="#ffffff" stroke="#1e293b" stroke-width="1.2"/>
+<line x1="317.5" y1="207" x2="525.0" y2="207" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+<text x="421.25" y="200" font-family="Arial, sans-serif" font-size="11" fill="#0f172a" text-anchor="middle">fetchTrendData(studentId, timeRange)</text>
+<rect x="934.0" y="244" width="12" height="32" fill="#ffffff" stroke="#1e293b" stroke-width="1.2"/>
+<line x1="525.0" y1="249" x2="940.0" y2="249" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+<text x="732.5" y="242" font-family="Arial, sans-serif" font-size="11" fill="#0f172a" text-anchor="middle">getAssessmentHistory(studentId, timeRange)</text>
+<line x1="940.0" y1="291" x2="525.0" y2="291" stroke="#334155" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#return-arrow)"/>
+<text x="732.5" y="284" font-family="Arial, sans-serif" font-size="11" fill="#334155" text-anchor="middle">assessmentRecords(history)</text>
+<rect x="726.5" y="328" width="12" height="32" fill="#ffffff" stroke="#1e293b" stroke-width="1.2"/>
+<line x1="525.0" y1="333" x2="732.5" y2="333" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+<text x="628.75" y="326" font-family="Arial, sans-serif" font-size="11" fill="#0f172a" text-anchor="middle">calculateBaselinePattern(history)</text>
+<rect x="726.5" y="370" width="12" height="32" fill="#ffffff" stroke="#1e293b" stroke-width="1.2"/>
+<path d="M 738.5 375 L 760.5 375 L 760.5 393 L 738.5 393" fill="none" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+<text x="766.5" y="387" font-family="Arial, sans-serif" font-size="11" fill="#0f172a" text-anchor="start">correlateEvents(examMarkers, stressSpikes)</text>
+<line x1="732.5" y1="417" x2="525.0" y2="417" stroke="#334155" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#return-arrow)"/>
+<text x="628.75" y="410" font-family="Arial, sans-serif" font-size="11" fill="#334155" text-anchor="middle">trendAnalytics(trajectory, baselineDiff, summary)</text>
+<line x1="525.0" y1="459" x2="317.5" y2="459" stroke="#334155" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#return-arrow)"/>
+<text x="421.25" y="452" font-family="Arial, sans-serif" font-size="11" fill="#334155" text-anchor="middle">renderGraphsAndSummary(trendAnalytics)</text>
+<line x1="317.5" y1="501" x2="110.0" y2="501" stroke="#334155" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#return-arrow)"/>
+<text x="213.75" y="494" font-family="Arial, sans-serif" font-size="11" fill="#334155" text-anchor="middle">displayTrendCharts()</text>
+<text x="525.0" y="815" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">Figure 5.4.6: Sequence Diagram for View Stress Trends & Baseline Trigger Analysis</text>
+</svg>

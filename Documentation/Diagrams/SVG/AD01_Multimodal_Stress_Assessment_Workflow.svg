@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="950" height="750" viewBox="0 0 950 750">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#0f172a"/></marker></defs>
+<rect width="950" height="750" fill="#ffffff"/>
+<rect x="25" y="25" width="900" height="690" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+<text x="45" y="50" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">Activity Diagram: Multimodal Stress Assessment &amp; Fusion Workflow</text>
+
+<!-- Start node -->
+<circle cx="150" cy="100" r="14" fill="#0f172a"/>
+
+<!-- Actions -->
+<rect x="70" y="140" width="160" height="45" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5" rx="8"/>
+<text x="150" y="167" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Submit PSS Answers</text>
+
+<rect x="70" y="220" width="160" height="45" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5" rx="8"/>
+<text x="150" y="247" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Log Voice/Text Diary</text>
+
+<rect x="70" y="300" width="160" height="45" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5" rx="8"/>
+<text x="150" y="327" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Log Daily Habits (Sleep, Steps)</text>
+
+<!-- Fork / Join Bar -->
+<rect x="280" y="120" width="8" height="240" fill="#0f172a"/>
+
+<line x1="150" y1="114" x2="150" y2="140" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+<line x1="230" y1="162" x2="280" y2="162" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+<line x1="230" y1="242" x2="280" y2="242" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+<line x1="230" y1="322" x2="280" y2="322" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+
+<!-- Synchronized Feature Matrix -->
+<rect x="330" y="215" width="180" height="50" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5" rx="8"/>
+<text x="420" y="245" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Feature Normalization</text>
+
+<line x1="288" y1="240" x2="330" y2="240" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+
+<rect x="550" y="215" width="170" height="50" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5" rx="8"/>
+<text x="635" y="245" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Multimodal Fusion Model</text>
+
+<line x1="510" y1="240" x2="550" y2="240" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+
+<!-- Decision Diamond -->
+<polygon points="780,240 830,215 880,240 830,265" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5"/>
+<line x1="720" y1="240" x2="780" y2="240" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+
+<!-- High stress branch -->
+<rect x="740" y="340" width="180" height="50" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5" rx="8"/>
+<text x="830" y="362" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Trigger Counselor Free Triage</text>
+<text x="830" y="378" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">&amp; Emergency Crisis Help</text>
+
+<line x1="830" y1="265" x2="830" y2="340" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+<text x="840" y="300" font-family="Arial, sans-serif" font-size="9" fill="#0f172a">[High Stress]</text>
+
+<!-- Low / Moderate branch -->
+<rect x="740" y="100" width="180" height="50" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5" rx="8"/>
+<text x="830" y="122" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Generate Adaptive Recovery</text>
+<text x="830" y="138" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">&amp; Balanced Study Sessions</text>
+
+<line x1="830" y1="215" x2="830" y2="150" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+<text x="840" y="180" font-family="Arial, sans-serif" font-size="9" fill="#0f172a">[Low / Moderate]</text>
+
+<!-- Merge and XAI -->
+<rect x="540" y="460" width="200" height="50" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5" rx="8"/>
+<text x="640" y="485" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Compute SHAP Feature Insights</text>
+
+<line x1="830" y1="390" x2="830" y2="485" stroke="#0f172a" stroke-width="1.3"/>
+<line x1="830" y1="485" x2="740" y2="485" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+
+<line x1="920" y1="125" x2="940" y2="125" stroke="#0f172a" stroke-width="1.3"/>
+<line x1="940" y1="125" x2="940" y2="485" stroke="#0f172a" stroke-width="1.3"/>
+<line x1="940" y1="485" x2="740" y2="485" stroke="#0f172a" stroke-width="1.3"/>
+
+<!-- Final state -->
+<circle cx="640" cy="580" r="14" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<circle cx="640" cy="580" r="9" fill="#0f172a"/>
+<line x1="640" y1="510" x2="640" y2="566" stroke="#0f172a" stroke-width="1.3" marker-end="url(#arrow)"/>
+
+<text x="475.0" y="735" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">Figure 5.6.1: Activity Diagram for Multimodal Stress Assessment &amp; Fusion Workflow</text>
+</svg>

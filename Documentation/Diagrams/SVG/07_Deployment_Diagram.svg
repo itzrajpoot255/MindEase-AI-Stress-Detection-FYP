@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="750" viewBox="0 0 1100 750">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f172a"/>
+  </marker>
+</defs>
+<rect width="1100" height="750" fill="#ffffff"/>
+<rect x="25" y="25" width="1050" height="690" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+<text x="45" y="50" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">MindEase UML Deployment Diagram</text>
+
+<!-- NODE 1: Mobile Device (Student / Counselor) -->
+<path d="M 60 120 L 75 100 L 335 100 L 320 120 Z M 335 100 L 335 480 L 320 500 L 320 120 Z" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="60" y="120" width="260" height="380" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<text x="190" y="145" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">&lt;&lt;device&gt;&gt;</text>
+<text x="190" y="165" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">Android Smartphone</text>
+<text x="190" y="180" font-family="Arial, sans-serif" font-size="10" fill="#475569" text-anchor="middle">OS: Android 9.0+ (Pie / 10 / 11 / 12 / 13 / 14)</text>
+
+<!-- Artifact inside mobile -->
+<rect x="80" y="200" width="220" height="60" fill="#f8fafc" stroke="#3b82f6" stroke-width="1.2" rx="4"/>
+<text x="190" y="225" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">&lt;&lt;artifact&gt;&gt;</text>
+<text x="190" y="245" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">MindEase_App.apk</text>
+
+<rect x="80" y="275" width="220" height="50" fill="#f8fafc" stroke="#64748b" stroke-width="1.2" rx="4"/>
+<text x="190" y="297" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Hardware: Microphone</text>
+<text x="190" y="313" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">Audio capture (16kHz PCM)</text>
+
+<rect x="80" y="340" width="220" height="50" fill="#f8fafc" stroke="#64748b" stroke-width="1.2" rx="4"/>
+<text x="190" y="362" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Hardware: Step Sensors</text>
+<text x="190" y="378" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">Pedometer / Activity recognition</text>
+
+<rect x="80" y="405" width="220" height="50" fill="#f8fafc" stroke="#64748b" stroke-width="1.2" rx="4"/>
+<text x="190" y="427" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Secure SQLite Storage</text>
+<text x="190" y="443" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">Offline cache &amp; session tokens</text>
+
+<!-- NODE 2: Cloud Application Server (FastAPI + AI) -->
+<path d="M 420 120 L 435 100 L 735 100 L 720 120 Z M 735 100 L 735 550 L 720 570 L 720 120 Z" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="420" y="120" width="300" height="450" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<text x="570" y="145" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">&lt;&lt;execution environment&gt;&gt;</text>
+<text x="570" y="165" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">Cloud VM / Container</text>
+<text x="570" y="180" font-family="Arial, sans-serif" font-size="10" fill="#475569" text-anchor="middle">Ubuntu Linux 22.04 LTS / Docker</text>
+
+<!-- Artifact inside Server -->
+<rect x="440" y="200" width="260" height="60" fill="#f8fafc" stroke="#10b981" stroke-width="1.2" rx="4"/>
+<text x="570" y="225" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857" text-anchor="middle">&lt;&lt;artifact&gt;&gt;</text>
+<text x="570" y="245" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">FastAPI ASGI Application (Python 3.11)</text>
+
+<rect x="440" y="275" width="260" height="60" fill="#f8fafc" stroke="#8b5cf6" stroke-width="1.2" rx="4"/>
+<text x="570" y="300" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6d28d9" text-anchor="middle">&lt;&lt;artifact&gt;&gt;</text>
+<text x="570" y="320" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Whisper ASR Inference Worker</text>
+
+<rect x="440" y="350" width="260" height="60" fill="#f8fafc" stroke="#8b5cf6" stroke-width="1.2" rx="4"/>
+<text x="570" y="375" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6d28d9" text-anchor="middle">&lt;&lt;artifact&gt;&gt;</text>
+<text x="570" y="395" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Multimodal Fusion Model (PyTorch)</text>
+
+<rect x="440" y="425" width="260" height="60" fill="#f8fafc" stroke="#8b5cf6" stroke-width="1.2" rx="4"/>
+<text x="570" y="450" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6d28d9" text-anchor="middle">&lt;&lt;artifact&gt;&gt;</text>
+<text x="570" y="470" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">SHAP XAI Explainer Engine</text>
+
+<!-- NODE 3: Supabase Cloud Managed -->
+<path d="M 800 120 L 815 100 L 1055 100 L 1040 120 Z M 1055 100 L 1055 380 L 1040 400 L 1040 120 Z" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="800" y="120" width="240" height="280" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<text x="920" y="145" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">&lt;&lt;cloud system&gt;&gt;</text>
+<text x="920" y="165" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">Supabase Managed Cloud</text>
+
+<rect x="820" y="190" width="200" height="50" fill="#f8fafc" stroke="#0284c7" stroke-width="1.2" rx="4"/>
+<text x="920" y="212" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">PostgreSQL Database (v15)</text>
+<text x="920" y="228" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">PostgREST &amp; RLS Engine</text>
+
+<rect x="820" y="250" width="200" height="50" fill="#f8fafc" stroke="#0284c7" stroke-width="1.2" rx="4"/>
+<text x="920" y="272" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">GoTrue Auth Provider</text>
+<text x="920" y="288" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">JWT Issue &amp; Verify</text>
+
+<rect x="820" y="310" width="200" height="50" fill="#f8fafc" stroke="#0284c7" stroke-width="1.2" rx="4"/>
+<text x="920" y="332" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">S3 Object Storage</text>
+<text x="920" y="348" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">Media &amp; Audio Store</text>
+
+<!-- NODE 4: Polar Payment Cloud Gateway -->
+<path d="M 800 450 L 815 430 L 1055 430 L 1040 450 Z M 1055 430 L 1055 580 L 1040 600 L 1040 450 Z" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.5"/>
+<rect x="800" y="450" width="240" height="150" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+<text x="920" y="475" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">&lt;&lt;external service&gt;&gt;</text>
+<text x="920" y="495" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">Polar Payment Gateway</text>
+
+<rect x="820" y="515" width="200" height="50" fill="#f8fafc" stroke="#f59e0b" stroke-width="1.2" rx="4"/>
+<text x="920" y="537" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Sandbox Payment &amp; Webhook</text>
+<text x="920" y="553" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">HMAC-SHA256 Webhooks</text>
+
+<!-- Communication Paths -->
+<line x1="320" y1="280" x2="420" y2="280" stroke="#0f172a" stroke-width="1.8"/>
+<text x="370" y="270" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">HTTPS / WSS</text>
+<text x="370" y="295" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">TLS 1.3</text>
+
+<line x1="720" y1="260" x2="800" y2="260" stroke="#0f172a" stroke-width="1.8"/>
+<text x="760" y="250" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">TCP 5432</text>
+<text x="760" y="275" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">Encrypted</text>
+
+<line x1="720" y1="520" x2="800" y2="520" stroke="#0f172a" stroke-width="1.8"/>
+<text x="760" y="510" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">HTTPS</text>
+<text x="760" y="535" font-family="Arial, sans-serif" font-size="9" fill="#475569" text-anchor="middle">REST Webhook</text>
+
+<!-- Caption -->
+<text x="550.0" y="735" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">Figure 5.1.3: MindEase UML Deployment Diagram (Physical Nodes, Artifacts &amp; Protocols)</text>
+</svg>
