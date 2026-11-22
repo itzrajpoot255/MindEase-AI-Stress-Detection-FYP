@@ -94,15 +94,15 @@
 <circle cx="423.0" cy="300" r="7" fill="#ffffff" stroke="#0f172a" stroke-width="1.8"/>
 <path d="M 441.0 290 A 10 10 0 0 0 441.0 310" fill="none" stroke="#0f172a" stroke-width="1.8"/>
 <line x1="441.0" y1="300" x2="480" y2="300" stroke="#0f172a" stroke-width="1.8"/>
-<text x="435.0" y="286" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#0f172a" text-anchor="middle">REST / WSS (HTTPS TLS 1.3)</text>
+<text x="435.0" y="288" font-family="Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#0f172a" text-anchor="middle">REST / WSS (HTTPS TLS 1.3)</text>
 <line x1="840" y1="240" x2="878.0" y2="240" stroke="#0f172a" stroke-width="1.8"/>
 <circle cx="878.0" cy="240" r="7" fill="#ffffff" stroke="#0f172a" stroke-width="1.8"/>
 <path d="M 896.0 230 A 10 10 0 0 0 896.0 250" fill="none" stroke="#0f172a" stroke-width="1.8"/>
 <line x1="896.0" y1="240" x2="940" y2="240" stroke="#0f172a" stroke-width="1.8"/>
-<text x="890.0" y="226" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#0f172a" text-anchor="middle">Internal IPC / PyTorch API</text>
+<text x="890.0" y="228" font-family="Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#0f172a" text-anchor="middle">Internal IPC / PyTorch API</text>
 <line x1="840" y1="520" x2="878.0" y2="520" stroke="#0f172a" stroke-width="1.8"/>
 <circle cx="878.0" cy="520" r="7" fill="#ffffff" stroke="#0f172a" stroke-width="1.8"/>
 <path d="M 896.0 510 A 10 10 0 0 0 896.0 530" fill="none" stroke="#0f172a" stroke-width="1.8"/>
 <line x1="896.0" y1="520" x2="940" y2="520" stroke="#0f172a" stroke-width="1.8"/>
-<text x="890.0" y="506" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#0f172a" text-anchor="middle">PostgreSQL TCP 5432 / PostgREST</text>
+<text x="890.0" y="508" font-family="Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#0f172a" text-anchor="middle">PostgreSQL TCP 5432 / PostgREST</text>
 </svg>
